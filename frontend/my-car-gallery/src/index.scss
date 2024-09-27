@@ -1,0 +1,21 @@
+@import '/public/assets/styles/mixins.scss';
+@import '/public/assets/styles/variables.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url('/assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+body{
+    color: white;
+    font-weight: 700;
+    overflow-x: hidden;
+    background-color: $bg;
+    font-family: Inter, sans-serif;
+}
