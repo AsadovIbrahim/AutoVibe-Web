@@ -24,4 +24,6 @@
     <ProjectReference Include="..\Car.Persistance\Car.Persistance.csproj" />
   </ItemGroup>
 
+  <ProjectExtensions><VisualStudio><UserProperties properties_4launchsettings_1json__JsonSchema="https://blockprotocol.org/schemas/block-metadata.json" /></VisualStudio></ProjectExtensions>
+
 </Project>

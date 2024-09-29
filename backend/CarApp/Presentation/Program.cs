@@ -11,23 +11,30 @@ namespace Presentation
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-
             builder.Services.AddControllers();
             builder.AddInfrastructureRegister();
             builder.Services.AddPersistanceRegister();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddIdentityConfigureServices();
 
+            // Add CORS Policy
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy", builder =>
+                {
+                    builder.WithOrigins("http://localhost:5200") 
+                           .AllowAnyMethod()
+                           .AllowAnyHeader()
+                           .AllowCredentials();
+                });
+            });
 
-
+            builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-
-
 
             // Swagger Auth Options
             builder.Services.AddSwaggerGen(option =>
             {
-
                 option.SwaggerDoc("v1", new OpenApiInfo { Title = "Demo API", Version = "v1" });
                 option.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {
@@ -40,22 +47,22 @@ namespace Presentation
                 });
 
                 option.AddSecurityRequirement(new OpenApiSecurityRequirement {
-            { new OpenApiSecurityScheme {
-                Reference = new OpenApiReference {
-                    Type=ReferenceType.SecurityScheme,
-                    Id="Bearer"
-                }
-            },
-            new string[]{}
-        }
-    });
+                    {
+                        new OpenApiSecurityScheme
+                        {
+                            Reference = new OpenApiReference {
+                                Type = ReferenceType.SecurityScheme,
+                                Id = "Bearer"
+                            }
+                        },
+                        new string[] {}
+                    }
+                });
             });
-
 
             var app = builder.Build();
             app.Services.AddRoleServices();
 
-            // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
@@ -63,9 +70,12 @@ namespace Presentation
             }
 
             app.UseHttpsRedirection();
+
+            app.UseCors("CorsPolicy");
+
+            app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();
-
 
             app.MapControllers();
 

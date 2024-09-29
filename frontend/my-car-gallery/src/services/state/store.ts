@@ -7,23 +7,20 @@ import { combineReducers, configureStore } from '@reduxjs/toolkit';
 
 const persistConfig = {
     key: 'root',
-    storage,   
+    storage,
 };
 
 const rootReducer = combineReducers({
     auth: authReducer,
     pagination: paginationReducer,
-});
-
-const persistedReducer = persistReducer(persistConfig, rootReducer);
-const reducers = combineReducers({
-    persistedReducer,  
     fetch: fetchReducer,
 });
 
+const persistedReducer = persistReducer(persistConfig, rootReducer);
+
 export const store = configureStore({
-    reducer: reducers
-})
+    reducer: persistedReducer, 
+});
 
 export const persistor = persistStore(store);
 

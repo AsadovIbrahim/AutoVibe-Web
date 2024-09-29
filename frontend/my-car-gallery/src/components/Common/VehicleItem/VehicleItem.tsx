@@ -2,14 +2,14 @@ import './VehicleItem.scss'
 import { Link } from 'react-router-dom';
 
 type VehicleItemProps = {
-    id: string;
+    id: string; 
     brand: string;
     model: string;
     year: number;
     imageUrl?: string;
   }
 
-const VehicleItem = ({ id, brand, model, year, imageUrl }: VehicleItemProps) => {
+const VehicleItem = ({id, brand, model, year, imageUrl}: VehicleItemProps) => {
   return (
     <div className="vehicle-container" key={id}>
       <div className='upper-part'>

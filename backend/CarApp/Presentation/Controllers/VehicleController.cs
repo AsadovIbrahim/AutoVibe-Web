@@ -21,11 +21,11 @@ namespace Presentation.Controllers
         {
             if (vehicleDTO == null) return BadRequest("Invalid Vehicle!");
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            if (string.IsNullOrEmpty(userId)) return Unauthorized("User Not Authenticated!");
+            if (string.IsNullOrEmpty(userId)) return Unauthorized("User Not Authenticated!"); 
             else await _vehicleService.AddVehicleAsync(vehicleDTO,userId);
             return Ok("Vehicle created succesfully...");
         }
-        [HttpGet("GetVehicles")]
+        [HttpGet("GetAllVehicles")]
         public async Task<IActionResult> GetAllVehicles(int page,int size)
         {
             var vehicles= await _vehicleService.GetVehicleAsync(page,size);
