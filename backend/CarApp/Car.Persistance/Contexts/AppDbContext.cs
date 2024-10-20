@@ -19,5 +19,7 @@ namespace Car.Persistance.Contexts
         }
 
         public virtual DbSet<Vehicle>Vehicles { get; set; }
+        public virtual DbSet<Category> Categories { get; set; }
+        public virtual DbSet<UserToken> UserTokens { get; set; }
     }
 }

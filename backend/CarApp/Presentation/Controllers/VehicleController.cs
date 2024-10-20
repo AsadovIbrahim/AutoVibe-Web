@@ -1,10 +1,9 @@
 ﻿using Car.Application.Services;
 using Car.Domain.DTO_s;
-using Car.Domain.Entities.Concretes;
-using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
- 
+
 namespace Presentation.Controllers
 {
     [Route("api/[controller]")]
@@ -17,6 +16,7 @@ namespace Presentation.Controllers
             _vehicleService = vehicleService;
         }
         [HttpPost("CreateVehicle")]
+        [Authorize(Roles ="Admin")]
         public async Task<IActionResult>AddVehicle([FromBody]VehicleDTO vehicleDTO)
         {
             if (vehicleDTO == null) return BadRequest("Invalid Vehicle!");
@@ -33,6 +33,8 @@ namespace Presentation.Controllers
         }
 
         [HttpDelete("RemoveVehicle")]
+        [Authorize(Roles = "Admin")]
+
         public async Task<IActionResult> RemoveVehicle([FromBody]string vehicleId)
         {
             if (vehicleId == null) return BadRequest("Vehicles Empty!");
@@ -43,6 +45,8 @@ namespace Presentation.Controllers
         }
 
         [HttpPut("UpdateVehicle")]
+        [Authorize(Roles = "Admin")]
+
         public async Task<IActionResult> UpdateVehicle([FromBody]UpdateVehicleDTO vehicleDTO)
         {
             if (vehicleDTO == null) return BadRequest("Invalid Vehicle!");

@@ -1,13 +1,13 @@
-﻿using Car.Application.Services;
-using Car.Domain.Entities.Concretes;
+﻿using System.Text;
 using Car.Domain.Helpers;
+using System.Security.Claims;
+using Car.Application.Services;
+using System.Security.Cryptography;
+using Car.Domain.Entities.Concretes;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using System.Security.Cryptography;
-using System.Text;
+using Microsoft.Extensions.Configuration;
 
 namespace Car.Infrastructure.Services
 {

@@ -15,8 +15,11 @@ namespace Car.Domain.Entities.Concretes
 
         //Foreign Key
 
-        public string UserId { get; set; }
+        public string? UserId { get; set; }
+        public string CategoryId { get; set; }
 
-        public virtual User User { get; set; }
+        //Navigation Properties
+        public virtual Category ?Category { get; set; }
+        public virtual User? User { get; set; }
     }
 }

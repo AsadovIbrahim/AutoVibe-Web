@@ -1,7 +1,5 @@
 ﻿using Car.Application.Services;
 using Car.Domain.DTO_s;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Presentation.Controllers

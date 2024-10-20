@@ -8,7 +8,13 @@ namespace Car.Persistance.Configurations
     {
         public void Configure(EntityTypeBuilder<Vehicle> builder)
         {
-            builder.HasOne(p => p.User).WithMany(v => v.Vehicles).HasForeignKey(p => p.UserId);
+            builder.HasOne(p => p.User)
+                .WithMany(v => v.Vehicles)
+                .HasForeignKey(p => p.UserId);
+
+            builder.HasOne(c=>c.Category)
+                .WithMany(v=>v.Vehicles)
+                .HasForeignKey(c => c.CategoryId);
         }
     }
 }

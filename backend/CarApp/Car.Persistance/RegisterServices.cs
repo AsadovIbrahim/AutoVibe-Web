@@ -17,6 +17,7 @@ namespace Car.Persistance
             //Services
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<IVehicleService, VehicleService>();
+            services.AddScoped<ICategoryService, CategoryService>();
 
 
             services.AddDbContext<AppDbContext>(options =>
@@ -33,11 +34,13 @@ namespace Car.Persistance
             //All Write Repositories
             services.AddScoped<IWriteUserRepository, WriteUserRepository>();
             services.AddScoped<IWriteVehicleRepository, WriteVehicleRepository>();
+            services.AddScoped<IWriteCategoryRepository, WriteCategoryRepository>();
             services.AddScoped<IWriteUserTokenRepository, WriteUserTokenRepository>();
 
             //All Read Repositories
             services.AddScoped<IReadUserRepository, ReadUserRepository>();
             services.AddScoped<IReadVehicleRepository, ReadVehicleRepository>();
+            services.AddScoped<IReadCategoryRepository, ReadCategoryRepository>();
             services.AddScoped<IReadUserTokenRepository, ReadUserTokenRepository>();
         }
     }
