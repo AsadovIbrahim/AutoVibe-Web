@@ -63,5 +63,18 @@ namespace Car.Persistance.Services
             };
             await _writeVehicleRepository.UpdateAsync(vehicle);
         }
+        public async Task<Vehicle> GetVehicleByIdAsync(string vehicleId)
+        {
+            var selectedVehicle=await _readVehicleRepository.GetByIdAsync(vehicleId);
+            var result = new Vehicle
+            {
+                Id=selectedVehicle.Id,
+                Brand = selectedVehicle.Brand,
+                Model = selectedVehicle.Model,
+                Year = selectedVehicle.Year,
+                ImgUrl = selectedVehicle.ImgUrl,
+            };
+            return result;
+        }
     }
 }

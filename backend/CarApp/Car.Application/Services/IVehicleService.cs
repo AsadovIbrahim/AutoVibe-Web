@@ -8,6 +8,7 @@ namespace Car.Application.Services
         Task AddVehicleAsync(VehicleDTO vehicleDTO,string userId);
         Task RemoveVehicleAsync(string vehicleId);
         Task<ICollection<Vehicle>> GetVehicleAsync(int page,int size);
+        Task<Vehicle> GetVehicleByIdAsync(string vehicleId);
         Task UpdateVehicleAsync(UpdateVehicleDTO vehicleDTO,string userId);
     }
 }

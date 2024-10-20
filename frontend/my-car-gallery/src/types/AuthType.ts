@@ -4,3 +4,4 @@ export type AuthType = {
     profilePhoto: string,
     isAuthenticated: boolean
 }
+

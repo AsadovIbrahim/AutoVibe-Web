@@ -51,5 +51,12 @@ namespace Presentation.Controllers
             else await _vehicleService.UpdateVehicleAsync(vehicleDTO,userId);
             return Ok($"Vehicle with {vehicleDTO.Id} updated successfully!");
         }
+        [HttpGet("GetVehicleById")]
+        public async Task<IActionResult> GetVehicleById([FromQuery]string vehicleId)
+        {
+            if (vehicleId == null) return BadRequest("Vehicles Empty!");
+            var vehicle=await _vehicleService.GetVehicleByIdAsync(vehicleId);
+            return Ok(vehicle);
+        }
     }
 }
