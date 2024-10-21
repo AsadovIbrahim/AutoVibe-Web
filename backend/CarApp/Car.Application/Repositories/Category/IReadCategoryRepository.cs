@@ -1,6 +1,5 @@
 ﻿using Car.Domain.Entities.Concretes;
 using Car.Application.Repositories.Common;
-using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
 
 namespace Car.Application.Repositories
 {

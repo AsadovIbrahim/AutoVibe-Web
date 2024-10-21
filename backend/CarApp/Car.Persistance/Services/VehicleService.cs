@@ -63,6 +63,7 @@ namespace Car.Persistance.Services
                 Brand = vehicleDTO.Brand,
                 Model = vehicleDTO.Model,
                 Year = vehicleDTO.Year,
+                CategoryId=vehicleDTO.CategoryId,
                 ImgUrl = vehicleDTO.ImgUrl,
                 UserId=userId
             };
@@ -76,6 +77,7 @@ namespace Car.Persistance.Services
                 Id=selectedVehicle.Id,
                 Brand = selectedVehicle.Brand,
                 Model = selectedVehicle.Model,
+                CategoryId=selectedVehicle.CategoryId,
                 Year = selectedVehicle.Year,
                 ImgUrl = selectedVehicle.ImgUrl,
             };
