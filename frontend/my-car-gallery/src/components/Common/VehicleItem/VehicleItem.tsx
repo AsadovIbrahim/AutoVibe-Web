@@ -5,15 +5,16 @@ type VehicleItemProps = {
     id: string; 
     brand: string;
     model: string;
+    categoryName:string
     year: number;
     imageUrl?: string;
   }
 
-const VehicleItem = ({id, brand, model, year, imageUrl}: VehicleItemProps) => {
+const VehicleItem = ({id, brand, model,categoryName, year, imageUrl}: VehicleItemProps) => {
   return (
     <div className="vehicle-container" key={id}>
       <div className='upper-part'>
-        {imageUrl ? <img src={imageUrl} alt={`${brand} ${model}`} /> : <p>No Image</p>}
+        {imageUrl ? <img src={imageUrl} alt={`${brand} ${model} ${categoryName}`} /> : <p>No Image</p>}
       </div>
 
       <div className='lower-part'>
@@ -21,6 +22,7 @@ const VehicleItem = ({id, brand, model, year, imageUrl}: VehicleItemProps) => {
           <p className='title'>{brand} {model}</p>
         </Link>
         <p className='year'>{year}</p>
+        <p className='category-name'>{categoryName}</p>
       </div>
     </div>
   );

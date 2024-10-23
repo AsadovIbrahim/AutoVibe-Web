@@ -24,6 +24,7 @@ const VehicleList=()=>{
             key={vehicle.id} 
             id={vehicle.id.toString()} 
             brand={vehicle.brand} 
+            categoryName={vehicle.categoryName}
             model={vehicle.model} 
             year={vehicle.year} 
             imageUrl={vehicle.imgUrl} 
