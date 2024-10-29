@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\source\\repos\\CarWebApp\\backend\\CarApp\\Car.Domain\\Car.Domain.csproj": {}
+    "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Domain\\Car.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\source\\repos\\CarWebApp\\backend\\CarApp\\Car.Domain\\Car.Domain.csproj": {
+    "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Domain\\Car.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\source\\repos\\CarWebApp\\backend\\CarApp\\Car.Domain\\Car.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Domain\\Car.Domain.csproj",
         "projectName": "Car.Domain",
-        "projectPath": "C:\\Users\\ASUS\\source\\repos\\CarWebApp\\backend\\CarApp\\Car.Domain\\Car.Domain.csproj",
+        "projectPath": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Domain\\Car.Domain.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\source\\repos\\CarWebApp\\backend\\CarApp\\Car.Domain\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",

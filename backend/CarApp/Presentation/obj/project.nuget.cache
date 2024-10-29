@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Dx2Aeegqbu0=",
+  "dgSpecHash": "ljYTIthig+E=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ASUS\\source\\repos\\CarWebApp\\backend\\CarApp\\Presentation\\Presentation.csproj",
+  "projectFilePath": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Presentation\\Presentation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUS\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\htmlagilitypack\\1.11.70\\htmlagilitypack.1.11.70.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

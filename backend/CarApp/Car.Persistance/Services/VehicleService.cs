@@ -1,8 +1,9 @@
 ﻿using Car.Domain.DTO_s;
 using Car.Application.Services;
-using Car.Application.Repositories;
 using Car.Domain.Entities.Concretes;
 using Car.Application.Repositories.Car;
+using Car.Domain.Enums.FuelTypes;
+using Car.Domain.Enums.VehicleType;
 
 namespace Car.Persistance.Services
 {
@@ -10,16 +11,13 @@ namespace Car.Persistance.Services
     {
         private readonly IReadVehicleRepository _readVehicleRepository;
         private readonly IWriteVehicleRepository _writeVehicleRepository;
-        private readonly IReadCategoryRepository _readCategoryRepository;
 
         public VehicleService(
             IReadVehicleRepository readVehicleRepository,
-            IWriteVehicleRepository writeVehicleRepository,
-            IReadCategoryRepository readCategoryRepository)
+            IWriteVehicleRepository writeVehicleRepository)
         {
             _readVehicleRepository = readVehicleRepository;
             _writeVehicleRepository = writeVehicleRepository;
-            _readCategoryRepository = readCategoryRepository;
         }
         public async Task AddVehicleAsync(VehicleDTO vehicleDTO, string userId)
         {
@@ -28,8 +26,9 @@ namespace Car.Persistance.Services
                 Brand = vehicleDTO.Brand,
                 Model = vehicleDTO.Model,
                 Year = vehicleDTO.Year,
+                FuelType = Enum.Parse<FuelType>(vehicleDTO.FuelType, true), 
+                VehicleType = Enum.Parse<VehicleType>(vehicleDTO.VehicleType, true), 
                 ImgUrl = vehicleDTO.ImgUrl,
-                CategoryId=vehicleDTO.CategoryId,
                 UserId=userId
             };
             await _writeVehicleRepository.AddAsync(vehicle);
@@ -44,7 +43,8 @@ namespace Car.Persistance.Services
                 Brand = p.Brand,
                 Model = p.Model,
                 Year = p.Year,
-                CategoryName=_readCategoryRepository.GetCategoryNameById(p.CategoryId),
+                FuelType = Enum.GetName(typeof(FuelType), p.FuelType),  
+                VehicleType = Enum.GetName(typeof(VehicleType), p.VehicleType),
                 ImgUrl = p.ImgUrl,
             }).ToList();
             return vehicleDto;
@@ -62,26 +62,37 @@ namespace Car.Persistance.Services
                 Id = vehicleDTO.Id,
                 Brand = vehicleDTO.Brand,
                 Model = vehicleDTO.Model,
+                FuelType = Enum.Parse<FuelType>(vehicleDTO.FuelType, true),  
+                VehicleType = Enum.Parse<VehicleType>(vehicleDTO.VehicleType, true),
                 Year = vehicleDTO.Year,
-                CategoryId=vehicleDTO.CategoryId,
                 ImgUrl = vehicleDTO.ImgUrl,
                 UserId=userId
             };
             await _writeVehicleRepository.UpdateAsync(vehicle);
         }
-        public async Task<Vehicle> GetVehicleByIdAsync(string vehicleId)
+        public async Task<GetVehicleDTO> GetVehicleByIdAsync(string vehicleId)
         {
             var selectedVehicle=await _readVehicleRepository.GetByIdAsync(vehicleId);
-            var result = new Vehicle
+            var result = new GetVehicleDTO
             {
                 Id=selectedVehicle.Id,
                 Brand = selectedVehicle.Brand,
                 Model = selectedVehicle.Model,
-                CategoryId=selectedVehicle.CategoryId,
+                FuelType = Enum.GetName(typeof(FuelType), selectedVehicle.FuelType),
+                VehicleType = Enum.GetName(typeof(VehicleType), selectedVehicle.VehicleType),
                 Year = selectedVehicle.Year,
                 ImgUrl = selectedVehicle.ImgUrl,
             };
             return result;
         }
+
+        public async Task ClearAllVehicles()
+        {
+            var vehicles=await _readVehicleRepository.GetAllAsync();
+            foreach (var vehicle in vehicles) { 
+                await _writeVehicleRepository.DeleteAsync(vehicle);
+            }
+        }
+
     }
 }

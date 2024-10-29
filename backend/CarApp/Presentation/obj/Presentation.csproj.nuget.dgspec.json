@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\source\\repos\\CarWebApp\\backend\\CarApp\\Presentation\\Presentation.csproj": {}
+    "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Presentation\\Presentation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\source\\repos\\CarWebApp\\backend\\CarApp\\Car.Application\\Car.Application.csproj": {
+    "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Application\\Car.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\source\\repos\\CarWebApp\\backend\\CarApp\\Car.Application\\Car.Application.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Application\\Car.Application.csproj",
         "projectName": "Car.Application",
-        "projectPath": "C:\\Users\\ASUS\\source\\repos\\CarWebApp\\backend\\CarApp\\Car.Application\\Car.Application.csproj",
+        "projectPath": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Application\\Car.Application.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\source\\repos\\CarWebApp\\backend\\CarApp\\Car.Application\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,8 +29,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ASUS\\source\\repos\\CarWebApp\\backend\\CarApp\\Car.Domain\\Car.Domain.csproj": {
-                "projectPath": "C:\\Users\\ASUS\\source\\repos\\CarWebApp\\backend\\CarApp\\Car.Domain\\Car.Domain.csproj"
+              "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Domain\\Car.Domain.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Domain\\Car.Domain.csproj"
               }
             }
           }
@@ -87,14 +87,14 @@
         }
       }
     },
-    "C:\\Users\\ASUS\\source\\repos\\CarWebApp\\backend\\CarApp\\Car.Domain\\Car.Domain.csproj": {
+    "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Domain\\Car.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\source\\repos\\CarWebApp\\backend\\CarApp\\Car.Domain\\Car.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Domain\\Car.Domain.csproj",
         "projectName": "Car.Domain",
-        "projectPath": "C:\\Users\\ASUS\\source\\repos\\CarWebApp\\backend\\CarApp\\Car.Domain\\Car.Domain.csproj",
+        "projectPath": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Domain\\Car.Domain.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\source\\repos\\CarWebApp\\backend\\CarApp\\Car.Domain\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -170,14 +170,14 @@
         }
       }
     },
-    "C:\\Users\\ASUS\\source\\repos\\CarWebApp\\backend\\CarApp\\Car.Infrastructure\\Car.Infrastructure.csproj": {
+    "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Infrastructure\\Car.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\source\\repos\\CarWebApp\\backend\\CarApp\\Car.Infrastructure\\Car.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Infrastructure\\Car.Infrastructure.csproj",
         "projectName": "Car.Infrastructure",
-        "projectPath": "C:\\Users\\ASUS\\source\\repos\\CarWebApp\\backend\\CarApp\\Car.Infrastructure\\Car.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Infrastructure\\Car.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\source\\repos\\CarWebApp\\backend\\CarApp\\Car.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -195,8 +195,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ASUS\\source\\repos\\CarWebApp\\backend\\CarApp\\Car.Application\\Car.Application.csproj": {
-                "projectPath": "C:\\Users\\ASUS\\source\\repos\\CarWebApp\\backend\\CarApp\\Car.Application\\Car.Application.csproj"
+              "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Application\\Car.Application.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Application\\Car.Application.csproj"
               }
             }
           }
@@ -216,6 +216,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "HtmlAgilityPack": {
+              "target": "Package",
+              "version": "[1.11.70, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[8.0.6, )"
@@ -265,14 +269,14 @@
         }
       }
     },
-    "C:\\Users\\ASUS\\source\\repos\\CarWebApp\\backend\\CarApp\\Car.Persistance\\Car.Persistance.csproj": {
+    "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Persistance\\Car.Persistance.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\source\\repos\\CarWebApp\\backend\\CarApp\\Car.Persistance\\Car.Persistance.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Persistance\\Car.Persistance.csproj",
         "projectName": "Car.Persistance",
-        "projectPath": "C:\\Users\\ASUS\\source\\repos\\CarWebApp\\backend\\CarApp\\Car.Persistance\\Car.Persistance.csproj",
+        "projectPath": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Persistance\\Car.Persistance.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\source\\repos\\CarWebApp\\backend\\CarApp\\Car.Persistance\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Persistance\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -290,8 +294,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ASUS\\source\\repos\\CarWebApp\\backend\\CarApp\\Car.Application\\Car.Application.csproj": {
-                "projectPath": "C:\\Users\\ASUS\\source\\repos\\CarWebApp\\backend\\CarApp\\Car.Application\\Car.Application.csproj"
+              "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Application\\Car.Application.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Application\\Car.Application.csproj"
               }
             }
           }
@@ -368,14 +372,14 @@
         }
       }
     },
-    "C:\\Users\\ASUS\\source\\repos\\CarWebApp\\backend\\CarApp\\Presentation\\Presentation.csproj": {
+    "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Presentation\\Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\source\\repos\\CarWebApp\\backend\\CarApp\\Presentation\\Presentation.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Presentation\\Presentation.csproj",
         "projectName": "Presentation",
-        "projectPath": "C:\\Users\\ASUS\\source\\repos\\CarWebApp\\backend\\CarApp\\Presentation\\Presentation.csproj",
+        "projectPath": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Presentation\\Presentation.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\source\\repos\\CarWebApp\\backend\\CarApp\\Presentation\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Presentation\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -393,11 +397,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ASUS\\source\\repos\\CarWebApp\\backend\\CarApp\\Car.Infrastructure\\Car.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\ASUS\\source\\repos\\CarWebApp\\backend\\CarApp\\Car.Infrastructure\\Car.Infrastructure.csproj"
+              "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Infrastructure\\Car.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Infrastructure\\Car.Infrastructure.csproj"
               },
-              "C:\\Users\\ASUS\\source\\repos\\CarWebApp\\backend\\CarApp\\Car.Persistance\\Car.Persistance.csproj": {
-                "projectPath": "C:\\Users\\ASUS\\source\\repos\\CarWebApp\\backend\\CarApp\\Car.Persistance\\Car.Persistance.csproj"
+              "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Persistance\\Car.Persistance.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Persistance\\Car.Persistance.csproj"
               }
             }
           }

@@ -62,5 +62,15 @@ namespace Presentation.Controllers
             var vehicle=await _vehicleService.GetVehicleByIdAsync(vehicleId);
             return Ok(vehicle);
         }
+       
+        [HttpPost("ClearAllVehicles")]
+        [Authorize(Roles ="Admin")]
+        public async Task<IActionResult> ClearAllVehicles()
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (string.IsNullOrEmpty(userId)) return Unauthorized("User Not Authenticated!");
+            else await _vehicleService.ClearAllVehicles();
+            return Ok("All Cars successfully Deleted Succesfully...");
+        }
     }
 }

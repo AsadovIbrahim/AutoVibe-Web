@@ -12,9 +12,7 @@ namespace Car.Persistance.Configurations
                 .WithMany(v => v.Vehicles)
                 .HasForeignKey(p => p.UserId);
 
-            builder.HasOne(c=>c.Category)
-                .WithMany(v=>v.Vehicles)
-                .HasForeignKey(c => c.CategoryId);
+           
         }
     }
 }

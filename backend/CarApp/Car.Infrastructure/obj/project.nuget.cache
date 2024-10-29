@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "LPT8n0WvN3Y=",
+  "dgSpecHash": "I2riqMBNbNw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ASUS\\source\\repos\\CarWebApp\\backend\\CarApp\\Car.Infrastructure\\Car.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Infrastructure\\Car.Infrastructure.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ASUS\\.nuget\\packages\\htmlagilitypack\\1.11.70\\htmlagilitypack.1.11.70.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.6\\microsoft.aspnetcore.authentication.jwtbearer.8.0.6.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.6\\microsoft.aspnetcore.cryptography.internal.8.0.6.nupkg.sha512",
