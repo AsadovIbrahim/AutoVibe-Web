@@ -1,5 +1,4 @@
 ﻿using Car.Domain.DTO_s;
-using Car.Domain.Entities.Concretes;
 
 namespace Car.Application.Services
 {
