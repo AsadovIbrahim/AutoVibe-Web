@@ -1,5 +1,7 @@
 ﻿using Car.Application.Services;
 using Car.Domain.DTO_s;
+using Car.Domain.Enums.FuelTypes;
+using Car.Domain.Enums.VehicleType;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
@@ -26,9 +28,9 @@ namespace Presentation.Controllers
             return Ok("Vehicle created succesfully...");
         }
         [HttpGet("GetAllVehicles")]
-        public async Task<IActionResult> GetAllVehicles(int page,int size)
+        public async Task<IActionResult> GetAllVehicles(int page,int size,string ?brand=null,VehicleType?vehicleType=null,FuelType?fuelType=null)
         {
-            var vehicles= await _vehicleService.GetVehicleAsync(page,size);
+            var vehicles= await _vehicleService.GetVehicleAsync(page,size,brand,vehicleType,fuelType);
             return Ok(vehicles);
         }
 

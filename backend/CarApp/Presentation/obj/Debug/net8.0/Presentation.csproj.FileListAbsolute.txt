@@ -464,3 +464,6 @@ C:\Users\ASUS\Desktop\AutoVibe-Web\backend\CarApp\Presentation\obj\Debug\net8.0\
 C:\Users\ASUS\Desktop\AutoVibe-Web\backend\CarApp\Presentation\obj\Debug\net8.0\Presentation.genruntimeconfig.cache
 C:\Users\ASUS\Desktop\AutoVibe-Web\backend\CarApp\Presentation\obj\Debug\net8.0\ref\Presentation.dll
 C:\Users\ASUS\Desktop\AutoVibe-Web\backend\CarApp\Presentation\bin\Debug\net8.0\HtmlAgilityPack.dll
+C:\Users\ASUS\Desktop\AutoVibe-Web\backend\CarApp\Presentation\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\ASUS\Desktop\AutoVibe-Web\backend\CarApp\Presentation\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\ASUS\Desktop\AutoVibe-Web\backend\CarApp\Presentation\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll

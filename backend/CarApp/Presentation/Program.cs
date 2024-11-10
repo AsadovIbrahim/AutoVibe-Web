@@ -1,6 +1,10 @@
+using Car.Domain.Enums.FuelTypes;
+using Car.Domain.Enums.VehicleType;
 using Car.Infrastructure;
 using Car.Persistance;
+using Microsoft.OpenApi.Any;
 using Microsoft.OpenApi.Models;
+
 
 namespace Presentation
 {
@@ -22,7 +26,7 @@ namespace Presentation
             {
                 options.AddPolicy("CorsPolicy", builder =>
                 {
-                    builder.WithOrigins("http://localhost:5200") 
+                    builder.WithOrigins("http://localhost:5200")
                            .AllowAnyMethod()
                            .AllowAnyHeader()
                            .AllowCredentials();
@@ -45,7 +49,21 @@ namespace Presentation
                     BearerFormat = "JWT",
                     Scheme = "Bearer"
                 });
+                option.MapType<FuelType>(() => new OpenApiSchema
+                {
+                    Type = "string",
+                    Enum = Enum.GetNames(typeof(FuelType))
+                                .Select(name => (IOpenApiAny)new OpenApiString(name))
+                                .ToList()
+                });
 
+                option.MapType<VehicleType>(() => new OpenApiSchema
+                {
+                    Type = "string",
+                    Enum = Enum.GetNames(typeof(VehicleType))
+                               .Select(name => (IOpenApiAny)new OpenApiString(name))
+                               .ToList()
+                });
                 option.AddSecurityRequirement(new OpenApiSecurityRequirement {
                     {
                         new OpenApiSecurityScheme

@@ -34,17 +34,27 @@ namespace Car.Persistance.Services
             await _writeVehicleRepository.AddAsync(vehicle);
         }
 
-        public async Task<ICollection<GetVehicleDTO>> GetVehicleAsync(int page,int size)
+        public async Task<ICollection<GetVehicleDTO>> GetVehicleAsync(int page,int size,string? brand=null,VehicleType?vehicleType=null,FuelType?fuelType=null)
         {
             var vehicles = await _readVehicleRepository.GetAllVehiclesAsync(page,size);
+
+            if (!string.IsNullOrEmpty(brand))
+                vehicles=vehicles.Where(v=>v.Brand==brand).ToList();
+
+            if (vehicleType.HasValue)
+                vehicles=vehicles.Where(v=>v.VehicleType== vehicleType.Value).ToList();
+
+            if (fuelType.HasValue)
+                vehicles=vehicles.Where(v=>v.FuelType== fuelType.Value).ToList();
+
             var vehicleDto = vehicles.Select(p=>new GetVehicleDTO
             {
                 Id=p.Id,
                 Brand = p.Brand,
                 Model = p.Model,
                 Year = p.Year,
-                FuelType = Enum.GetName(typeof(FuelType), p.FuelType),  
-                VehicleType = Enum.GetName(typeof(VehicleType), p.VehicleType),
+                FuelType = p.FuelType.ToString(),
+                VehicleType = p.VehicleType.ToString(),
                 ImgUrl = p.ImgUrl,
             }).ToList();
             return vehicleDto;
@@ -75,11 +85,11 @@ namespace Car.Persistance.Services
             var selectedVehicle=await _readVehicleRepository.GetByIdAsync(vehicleId);
             var result = new GetVehicleDTO
             {
-                Id=selectedVehicle.Id,
+                Id=selectedVehicle!.Id,
                 Brand = selectedVehicle.Brand,
                 Model = selectedVehicle.Model,
-                FuelType = Enum.GetName(typeof(FuelType), selectedVehicle.FuelType),
-                VehicleType = Enum.GetName(typeof(VehicleType), selectedVehicle.VehicleType),
+                FuelType =selectedVehicle.FuelType.ToString(),
+                VehicleType =selectedVehicle.VehicleType.ToString(),       
                 Year = selectedVehicle.Year,
                 ImgUrl = selectedVehicle.ImgUrl,
             };
