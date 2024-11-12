@@ -153,6 +153,37 @@ namespace Car.Persistance.Migrations
                     b.ToTable("UserTokens");
                 });
 
+            modelBuilder.Entity("Car.Domain.Entities.Concretes.UserWishList", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("VehicleId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.HasIndex("VehicleId");
+
+                    b.ToTable("WishLists");
+                });
+
             modelBuilder.Entity("Car.Domain.Entities.Concretes.Vehicle", b =>
                 {
                     b.Property<string>("Id")
@@ -342,6 +373,25 @@ namespace Car.Persistance.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("Car.Domain.Entities.Concretes.UserWishList", b =>
+                {
+                    b.HasOne("Car.Domain.Entities.Concretes.User", "User")
+                        .WithMany("WishLists")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Car.Domain.Entities.Concretes.Vehicle", "Vehicle")
+                        .WithMany("WishLists")
+                        .HasForeignKey("VehicleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+
+                    b.Navigation("Vehicle");
+                });
+
             modelBuilder.Entity("Car.Domain.Entities.Concretes.Vehicle", b =>
                 {
                     b.HasOne("Car.Domain.Entities.Concretes.User", "User")
@@ -407,6 +457,13 @@ namespace Car.Persistance.Migrations
                     b.Navigation("UserTokens");
 
                     b.Navigation("Vehicles");
+
+                    b.Navigation("WishLists");
+                });
+
+            modelBuilder.Entity("Car.Domain.Entities.Concretes.Vehicle", b =>
+                {
+                    b.Navigation("WishLists");
                 });
 #pragma warning restore 612, 618
         }

@@ -3,36 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EEE34902-B764-4041-A555-F9F1A2E0057A}|Car.Persistance\\Car.Persistance.csproj|c:\\users\\asus\\desktop\\autovibe-web\\backend\\carapp\\car.persistance\\services\\vehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EEE34902-B764-4041-A555-F9F1A2E0057A}|Car.Persistance\\Car.Persistance.csproj|solutionrelative:car.persistance\\services\\vehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EEE34902-B764-4041-A555-F9F1A2E0057A}|Car.Persistance\\Car.Persistance.csproj|c:\\users\\asus\\desktop\\autovibe-web\\backend\\carapp\\car.persistance\\services\\vehiclewishlistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEE34902-B764-4041-A555-F9F1A2E0057A}|Car.Persistance\\Car.Persistance.csproj|solutionrelative:car.persistance\\services\\vehiclewishlistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA3B704-9D30-4AC9-BE72-4E51A32167C8}|Presentation\\Presentation.csproj|c:\\users\\asus\\desktop\\autovibe-web\\backend\\carapp\\presentation\\controllers\\vehiclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EA3B704-9D30-4AC9-BE72-4E51A32167C8}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\vehiclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EEE34902-B764-4041-A555-F9F1A2E0057A}|Car.Persistance\\Car.Persistance.csproj|c:\\users\\asus\\desktop\\autovibe-web\\backend\\carapp\\car.persistance\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEE34902-B764-4041-A555-F9F1A2E0057A}|Car.Persistance\\Car.Persistance.csproj|solutionrelative:car.persistance\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA3B704-9D30-4AC9-BE72-4E51A32167C8}|Presentation\\Presentation.csproj|c:\\users\\asus\\desktop\\autovibe-web\\backend\\carapp\\presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EA3B704-9D30-4AC9-BE72-4E51A32167C8}|Presentation\\Presentation.csproj|solutionrelative:presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7EA3B704-9D30-4AC9-BE72-4E51A32167C8}|Presentation\\Presentation.csproj|c:\\users\\asus\\desktop\\autovibe-web\\backend\\carapp\\presentation\\controllers\\userwishlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EA3B704-9D30-4AC9-BE72-4E51A32167C8}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\userwishlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EEE34902-B764-4041-A555-F9F1A2E0057A}|Car.Persistance\\Car.Persistance.csproj|c:\\users\\asus\\desktop\\autovibe-web\\backend\\carapp\\car.persistance\\registerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EEE34902-B764-4041-A555-F9F1A2E0057A}|Car.Persistance\\Car.Persistance.csproj|solutionrelative:car.persistance\\registerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{91E7E96F-DB19-4F89-A17D-93CDEB68E7BB}|Car.Domain\\Car.Domain.csproj|c:\\users\\asus\\desktop\\autovibe-web\\backend\\carapp\\car.domain\\enums\\vehicletypes\\vehicletype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91E7E96F-DB19-4F89-A17D-93CDEB68E7BB}|Car.Domain\\Car.Domain.csproj|solutionrelative:car.domain\\enums\\vehicletypes\\vehicletype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{91E7E96F-DB19-4F89-A17D-93CDEB68E7BB}|Car.Domain\\Car.Domain.csproj|c:\\users\\asus\\desktop\\autovibe-web\\backend\\carapp\\car.domain\\enums\\fueltypes\\fueltype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91E7E96F-DB19-4F89-A17D-93CDEB68E7BB}|Car.Domain\\Car.Domain.csproj|solutionrelative:car.domain\\enums\\fueltypes\\fueltype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{91E7E96F-DB19-4F89-A17D-93CDEB68E7BB}|Car.Domain\\Car.Domain.csproj|c:\\users\\asus\\desktop\\autovibe-web\\backend\\carapp\\car.domain\\entities\\concretes\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91E7E96F-DB19-4F89-A17D-93CDEB68E7BB}|Car.Domain\\Car.Domain.csproj|solutionrelative:car.domain\\entities\\concretes\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3342B83F-7662-4DE2-85DE-B2A8B2C10483}|Car.Application\\Car.Application.csproj|c:\\users\\asus\\desktop\\autovibe-web\\backend\\carapp\\car.application\\services\\ivehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3342B83F-7662-4DE2-85DE-B2A8B2C10483}|Car.Application\\Car.Application.csproj|solutionrelative:car.application\\services\\ivehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,58 +26,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FuelType.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Domain\\Enums\\FuelTypes\\FuelType.cs",
-              "RelativeDocumentMoniker": "Car.Domain\\Enums\\FuelTypes\\FuelType.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Domain\\Enums\\FuelTypes\\FuelType.cs",
-              "RelativeToolTip": "Car.Domain\\Enums\\FuelTypes\\FuelType.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Persistance\\Contexts\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Car.Persistance\\Contexts\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Persistance\\Contexts\\AppDbContext.cs",
+              "RelativeToolTip": "Car.Persistance\\Contexts\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T08:13:27.551Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RegisterServices.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Persistance\\RegisterServices.cs",
-              "RelativeDocumentMoniker": "Car.Persistance\\RegisterServices.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Persistance\\RegisterServices.cs",
-              "RelativeToolTip": "Car.Persistance\\RegisterServices.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T07:56:55.588Z",
+              "WhenOpened": "2024-11-12T17:52:22.246Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Presentation\\Program.cs",
-              "RelativeDocumentMoniker": "Presentation\\Program.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Presentation\\Program.cs",
-              "RelativeToolTip": "Presentation\\Program.cs",
-              "ViewState": "AQIAAEkAAAAAAAAAAAAQwAYAAAAAAAAA",
+              "Title": "UserWishListController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Presentation\\Controllers\\UserWishListController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Controllers\\UserWishListController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Presentation\\Controllers\\UserWishListController.cs",
+              "RelativeToolTip": "Presentation\\Controllers\\UserWishListController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T07:54:36.477Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "VehicleType.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Domain\\Enums\\VehicleTypes\\VehicleType.cs",
-              "RelativeDocumentMoniker": "Car.Domain\\Enums\\VehicleTypes\\VehicleType.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Domain\\Enums\\VehicleTypes\\VehicleType.cs",
-              "RelativeToolTip": "Car.Domain\\Enums\\VehicleTypes\\VehicleType.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T15:46:02.133Z",
+              "WhenOpened": "2024-11-12T13:31:00.975Z",
               "EditorCaption": ""
             },
             {
@@ -115,53 +73,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "VehicleService.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Persistance\\Services\\VehicleService.cs",
-              "RelativeDocumentMoniker": "Car.Persistance\\Services\\VehicleService.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Persistance\\Services\\VehicleService.cs",
-              "RelativeToolTip": "Car.Persistance\\Services\\VehicleService.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAgwEIAAAAAAAAA",
+              "Title": "VehicleWishListService.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Persistance\\Services\\VehicleWishListService.cs",
+              "RelativeDocumentMoniker": "Car.Persistance\\Services\\VehicleWishListService.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Persistance\\Services\\VehicleWishListService.cs",
+              "RelativeToolTip": "Car.Persistance\\Services\\VehicleWishListService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T15:53:08.674Z",
+              "WhenOpened": "2024-11-12T13:20:53.588Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IVehicleService.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Application\\Services\\IVehicleService.cs",
-              "RelativeDocumentMoniker": "Car.Application\\Services\\IVehicleService.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Application\\Services\\IVehicleService.cs",
-              "RelativeToolTip": "Car.Application\\Services\\IVehicleService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAwAAABLAAAA",
+              "DocumentIndex": 3,
+              "Title": "RegisterServices.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Persistance\\RegisterServices.cs",
+              "RelativeDocumentMoniker": "Car.Persistance\\RegisterServices.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Persistance\\RegisterServices.cs",
+              "RelativeToolTip": "Car.Persistance\\RegisterServices.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T15:52:44.555Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "VehicleController.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Presentation\\Controllers\\VehicleController.cs",
-              "RelativeDocumentMoniker": "Presentation\\Controllers\\VehicleController.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Presentation\\Controllers\\VehicleController.cs",
-              "RelativeToolTip": "Presentation\\Controllers\\VehicleController.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAYwDYAAABIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T15:46:39.677Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Vehicle.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Domain\\Entities\\Concretes\\Vehicle.cs",
-              "RelativeDocumentMoniker": "Car.Domain\\Entities\\Concretes\\Vehicle.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\AutoVibe-Web\\backend\\CarApp\\Car.Domain\\Entities\\Concretes\\Vehicle.cs",
-              "RelativeToolTip": "Car.Domain\\Entities\\Concretes\\Vehicle.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAowA4AAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T15:44:21.967Z",
+              "WhenOpened": "2024-11-12T13:18:20.936Z",
               "EditorCaption": ""
             }
           ]

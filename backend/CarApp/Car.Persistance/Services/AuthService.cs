@@ -1,5 +1,4 @@
-﻿using Azure.Core;
-using Car.Application.Repositories;
+﻿using Car.Application.Repositories;
 using Car.Application.Services;
 using Car.Domain.DTO_s;
 using Car.Domain.Entities.Concretes;
@@ -196,7 +195,7 @@ namespace Car.Persistance.Services
         {
 
             var confirmEmailToken = _tokenService.CreateConfirmEmailToken();
-            var actionUrl = $@"https://localhost:7109/api/Auth/ConfirmEmail?token={confirmEmailToken.Token}";
+            var actionUrl = $@"https://localhost:7109/api/Auth/ConfirmEmail?token={Uri.EscapeDataString(confirmEmailToken.Token)}";
             var result = await _emailService.SendMailAsync(registerDTO.Email, "Confirm Your Email", $"Reset your password by <a href='{actionUrl}'>clicking here</a>.", true);
 
             var userConfirmEmailToken = new UserToken()

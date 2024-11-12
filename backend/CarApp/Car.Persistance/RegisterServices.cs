@@ -1,11 +1,13 @@
-﻿using Car.Application.Repositories;
-using Car.Application.Repositories.Car;
+﻿using Car.Persistance.Services;
 using Car.Application.Services;
 using Car.Persistance.Contexts;
 using Car.Persistance.Repositories;
-using Car.Persistance.Services;
+using Car.Application.Repositories;
 using Microsoft.EntityFrameworkCore;
+using Car.Application.Repositories.Car;
 using Microsoft.Extensions.Configuration;
+using Car.Persistance.Repositories.CarWishList;
+using Car.Application.Repositories.CarWishlist;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Car.Persistance
@@ -17,6 +19,7 @@ namespace Car.Persistance
             //Services
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<IVehicleService, VehicleService>();
+            services.AddScoped<IVehicleWishListService, VehicleWishListService>();
 
 
             services.AddDbContext<AppDbContext>(options =>
@@ -34,11 +37,13 @@ namespace Car.Persistance
             services.AddScoped<IWriteUserRepository, WriteUserRepository>();
             services.AddScoped<IWriteVehicleRepository, WriteVehicleRepository>();
             services.AddScoped<IWriteUserTokenRepository, WriteUserTokenRepository>();
+            services.AddScoped<IWriteVehicleWishListRepository, WriteVehicleWishListRepository>();
 
             //All Read Repositories
             services.AddScoped<IReadUserRepository, ReadUserRepository>();
             services.AddScoped<IReadVehicleRepository, ReadVehicleRepository>();
             services.AddScoped<IReadUserTokenRepository, ReadUserTokenRepository>();
+            services.AddScoped<IReadVehicleWishListRepository, ReadVehicleWishListRepository>();
         }
     }
 }

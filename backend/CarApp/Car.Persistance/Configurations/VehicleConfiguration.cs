@@ -11,8 +11,6 @@ namespace Car.Persistance.Configurations
             builder.HasOne(p => p.User)
                 .WithMany(v => v.Vehicles)
                 .HasForeignKey(p => p.UserId);
-
-           
         }
     }
 }

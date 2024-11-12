@@ -20,8 +20,10 @@ namespace Car.Domain.Entities.Concretes
         //Foreign Key
 
         public string? UserId { get; set; }
+        public virtual User? User { get; set; }
 
         //Navigation Properties
-        public virtual User? User { get; set; }
+
+        public virtual ICollection<UserWishList> WishLists { get; set; } = new List<UserWishList>();
     }
 }

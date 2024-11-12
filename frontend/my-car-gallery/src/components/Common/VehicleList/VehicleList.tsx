@@ -7,11 +7,8 @@ import { GetAllVehicles } from '../../../services/api/ApiService';
 const VehicleList=()=>{
     const dispatch=useAppDispatch();
     const list=useAppSelector((state)=>state.fetch.list);
-
-
     const page=useAppSelector((state)=>state.pagination.currentPage);
 
-    
     useEffect(()=>{
         dispatch(GetAllVehicles(page,8));
     },[page]);
@@ -24,7 +21,8 @@ const VehicleList=()=>{
             key={vehicle.id} 
             id={vehicle.id.toString()} 
             brand={vehicle.brand} 
-            categoryName={vehicle.categoryName}
+            vehicleType={vehicle.vehicleType}
+            fuelType={vehicle.fuelType} 
             model={vehicle.model} 
             year={vehicle.year} 
             imageUrl={vehicle.imgUrl} 

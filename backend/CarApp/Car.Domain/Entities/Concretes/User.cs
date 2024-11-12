@@ -17,6 +17,7 @@ namespace Car.Domain.Entities.Concretes
         public DateTime? RefreshTokenExpiryTime { get; set; }
         public virtual ICollection<UserToken>? UserTokens { get; set; }
         public virtual ICollection<Vehicle> Vehicles { get; set; }=new List<Vehicle>();
+        public virtual ICollection<UserWishList> WishLists { get; set; }= new List<UserWishList>();
 
     }
 }

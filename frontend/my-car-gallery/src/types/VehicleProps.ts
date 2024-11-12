@@ -2,7 +2,8 @@ export type VehicleProps={
     id: string;
     brand: string;
     model: string;
-    categoryName:string;
+    fuelType:string;
+    vehicleType:string;
     year: number;
     imgUrl?: string;
 }
