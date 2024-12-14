@@ -1,0 +1,41 @@
+@import '/public/assets/styles/mixins.scss';
+@import '/public/assets/styles/variables.scss';
+
+.background-image {
+    position: relative; 
+    width: 100%;
+    height: 600px; 
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        display: block;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8); 
+        z-index: 2; 
+    }
+
+    .yellow-text{
+        color: #ffc107;
+    }
+    .title {
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        color: white; 
+        max-width: 600px;
+        font-size: 2.8rem; 
+        font-weight: bold;
+        z-index: 3; 
+        text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); 
+    }
+}
