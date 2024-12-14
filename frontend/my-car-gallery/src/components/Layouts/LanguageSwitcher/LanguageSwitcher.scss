@@ -1,0 +1,26 @@
+@import '/public/assets/styles/mixins.scss';
+@import '/public/assets/styles/variables.scss';
+
+
+.languageSelect {
+    @include dflex-align(8px);
+    font-weight: 500;
+    img{
+        height: 20px;
+        color: $primary;
+    }
+
+    
+    font-family: "Inter";
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+    option {
+        background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+        color: black;
+    }
+}
+

@@ -1,16 +1,14 @@
-import VehicleList from "../../components/Common/VehicleList/VehicleList"
-
+import "./App.scss";
+import { Header } from "../../components/Layouts/Header/Header";
 
 function App() {
-  
   return (
     <div>
       <main>
-        <VehicleList/>
+        <Header/>
       </main>
-    
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

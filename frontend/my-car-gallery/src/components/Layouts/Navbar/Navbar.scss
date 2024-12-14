@@ -1,0 +1,84 @@
+@import '/public/assets/styles/mixins.scss';
+@import '/public/assets/styles/variables.scss';
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #111;
+    color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  
+    .logo {
+      display: flex;
+      align-items: center;
+  
+      a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #ffffff;
+  
+        img {
+          width: 40px;
+          margin-right: 10px;
+        }
+  
+        .brand-name {
+          font-size: 1.5rem;
+          font-weight: bold;
+  
+          .highlight {
+            color: #ffc107;
+          }
+        }
+      }
+    }
+  
+    .nav-links {
+      display: flex;
+      list-style: none;
+  
+      li {
+        margin: 0 2rem;
+  
+        a {
+          text-decoration: none;
+          color: #ffffff;
+          font-weight: 600;
+          font-size: 14px;
+          transition: color 0.3s;
+  
+          &:hover {
+            color: #ffc107;
+          }
+        }
+      }
+    }
+    .right-section{
+        @include dflex-param(20px,flex);
+
+        .auth {
+            .sign-in-btn {
+              text-decoration: none;
+              border: 2px solid #ffc107;
+              color: #ffffff;
+              padding: 10px 40px 10px 40px;
+              font-size: 15px;
+              background-color: transparent;
+              border-radius: 40px;
+              font-weight: 600;
+              transition: background-color 0.3s;
+        
+              &:hover {
+                background-color: #e0a800;
+              }
+            }
+          }
+    }
+    
+  }
+  

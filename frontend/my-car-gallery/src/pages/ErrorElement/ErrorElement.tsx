@@ -2,8 +2,6 @@ import './ErrorElement.scss'
 
 
 const ErrorElement = () => {
-    
-
     return (
         <div className='error-page'>
             <div className='error-container'>
