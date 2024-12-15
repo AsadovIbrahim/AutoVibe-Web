@@ -1,0 +1,27 @@
+@import '/public/assets/styles/mixins.scss';
+@import '/public/assets/styles/variables.scss';
+
+.pagination-section{
+    @include dflex-param(20px,flex);
+    margin-left: 50px;
+    margin-bottom: 100px;
+
+    .prev-btn{
+        border: 1px solid gray;
+        border-radius: 30px;
+        cursor: pointer;
+        padding: 10px 25px 10px 25px;
+    }
+
+    
+    .next-btn{
+        border: 1px solid gray;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 30px;
+        padding: 10px 25px 10px 25px;
+
+    }
+
+
+}

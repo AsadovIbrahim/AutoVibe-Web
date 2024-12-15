@@ -10,11 +10,11 @@ const VehicleList=()=>{
     const page=useAppSelector((state)=>state.pagination.currentPage);
 
     useEffect(()=>{
-        dispatch(GetAllVehicles(page,8));
+        dispatch(GetAllVehicles(page,6));
     },[page]);
 
     return(
-        <div className="vehicle-list">
+      <div className="vehicle-list">
         {list.length != 0 ?
         list.map((vehicle) => (
           <VehicleItem 
@@ -33,6 +33,7 @@ const VehicleList=()=>{
         </div>
       }
     </div>
+
     )
 }
 
