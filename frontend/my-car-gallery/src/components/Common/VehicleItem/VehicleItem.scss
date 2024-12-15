@@ -1,0 +1,47 @@
+@import '/public/assets/styles/mixins.scss';
+@import '/public/assets/styles/variables.scss';
+
+.vehicle-container{
+    border: 1px solid #050B20;
+    border-radius: 16px;
+    width: 30%;
+    background-color: #050B20;
+    box-shadow: 1px 1px 0 0 rgba(196, 196, 196, 0.24);
+    img{
+        width: 100%;
+        border-radius: 16px 16px 0px 0px;
+    }
+    .lower-part{
+        margin-bottom: 15px;
+        .brand{
+            padding: 10px 20px 10px 20px;
+        }
+        .vehicle-type{
+            margin-left: 10px;
+            font-weight: 500;
+            color: rgb(123, 120, 120);
+        }
+        .fuel-type{
+            font-weight: 500;
+            color: rgb(123, 120, 120);
+        }
+    }
+    .line{
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        background-color: #343b4a;
+        border: none;
+        height: 2px;
+    }
+    .border-year{
+        padding-left:20px;
+        .year{
+            background-color: #ffc107;
+            margin-right: 20px;
+            width: fit-content;
+            padding: 5px 10px 5px 10px;
+            border-radius: 5px;
+        }
+    }
+}

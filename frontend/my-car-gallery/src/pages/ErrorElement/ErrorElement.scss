@@ -52,7 +52,7 @@
   letter-spacing: 0.05rem;
 }
 
-h1 {
+.error-code {
     -webkit-animation: swing var(--speed) infinite alternate ease-in-out;
             animation: swing var(--speed) infinite alternate ease-in-out;
     font-size: clamp(5rem, 40vmin, 20rem);

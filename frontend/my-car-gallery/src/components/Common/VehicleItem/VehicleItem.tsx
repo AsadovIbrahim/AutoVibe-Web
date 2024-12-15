@@ -1,14 +1,6 @@
 import './VehicleItem.scss'
+import { VehicleItemProps } from '../../../types/VehicleItemProps';
 
-type VehicleItemProps = {
-    id: string; 
-    brand: string;
-    model: string;
-    fuelType:string;
-    vehicleType:string;
-    year: number;
-    imageUrl?: string;
-  }
 
 const VehicleItem = ({id, brand, model,fuelType,vehicleType, year, imageUrl}: VehicleItemProps) => {
   return (
@@ -18,11 +10,9 @@ const VehicleItem = ({id, brand, model,fuelType,vehicleType, year, imageUrl}: Ve
       </div>
 
       <div className='lower-part'>
-       
-        <p className='brand'>{brand} {model}</p>
-        <p className='year'>{year}</p>
-        <p className='fuel-type'>{fuelType}</p>
-        <p className='vehicle-type'>{vehicleType}</p>
+        <p className='brand'>{brand} {model} {year}</p>
+        <hr className='line' />
+        <p className='border-year'><span className='year'>{year}</span><span className='fuel-type'>{fuelType}</span><span className='vehicle-type'>{vehicleType}</span></p>
       </div>
     </div>
   );

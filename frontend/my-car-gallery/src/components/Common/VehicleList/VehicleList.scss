@@ -1,0 +1,7 @@
+@import '/public/assets/styles/mixins.scss';
+@import '/public/assets/styles/variables.scss';
+
+.vehicle-list{
+    @include dflex-param(12px,center,flex);
+    flex-wrap: wrap;
+}
