@@ -11,7 +11,6 @@ const Pagination=()=>{
                 <div className='next-btn'>
                     <img src="/assets/images/icon/vector-right.svg"/>
                 </div>
-
             </div>
         </>
     )

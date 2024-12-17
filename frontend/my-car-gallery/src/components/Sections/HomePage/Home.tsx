@@ -3,6 +3,7 @@ import Navbar from '../../Layouts/Navbar/Navbar'
 import Banner from '../../Common/Banner/Banner'
 import PopularMakes from '../PopularMakes/PopularMakes'
 import Pagination from '../../Common/Pagination/Pagination'
+import Footer from '../../Layouts/Footer/Footer'
 
 const Home=()=>{
   return(
@@ -19,6 +20,8 @@ const Home=()=>{
       <PopularMakes/>
 
       <Pagination/>
+
+      <Footer/>
     </div>
 
   )
