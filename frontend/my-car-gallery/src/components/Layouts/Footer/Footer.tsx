@@ -62,7 +62,11 @@ const Footer=()=>{
 
                     </div>
 
+                    <div className='footer-second-section'>
+                        <p>Copyright © 2024. All Rights Reserved By Auto<span className='vibe-text'>Vibe</span></p>    
+                    </div> 
                 </footer>
+                
             </section>
         </>
     )

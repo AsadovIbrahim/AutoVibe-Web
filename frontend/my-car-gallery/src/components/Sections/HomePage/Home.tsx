@@ -1,14 +1,13 @@
 import './Home.scss'
-import Navbar from '../../Layouts/Navbar/Navbar'
 import Banner from '../../Common/Banner/Banner'
 import PopularMakes from '../PopularMakes/PopularMakes'
 import Pagination from '../../Common/Pagination/Pagination'
-import Footer from '../../Layouts/Footer/Footer'
+import ScrollTopButton from '../../Common/ScrollTopButton/ScrollTopButton'
 
 const Home=()=>{
   return(
     <div className="home-container">
-      <Navbar />
+      <ScrollTopButton/>
       <Banner
       title={
         <>
@@ -21,7 +20,6 @@ const Home=()=>{
 
       <Pagination/>
 
-      <Footer/>
     </div>
 
   )
