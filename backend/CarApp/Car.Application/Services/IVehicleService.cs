@@ -11,6 +11,11 @@ namespace Car.Application.Services
         Task AddVehicleAsync(VehicleDTO vehicleDTO,string userId);
         Task<GetVehicleDTO> GetVehicleByIdAsync(string vehicleId);
         Task UpdateVehicleAsync(UpdateVehicleDTO vehicleDTO,string userId);
-        Task<ICollection<GetVehicleDTO>> GetVehicleAsync(int page,int size,string? brand=null,VehicleType? vehicleType = null, FuelType? fuelType = null);
+        Task<(ICollection<GetVehicleDTO> Vehicles, int TotalCount)> GetVehicleAsync(
+           int page,
+           int size,
+           string? brand = null,
+           VehicleType? vehicleType = null,
+           FuelType? fuelType = null);  
     }
 }

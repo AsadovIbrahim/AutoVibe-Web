@@ -12,20 +12,22 @@ const VehicleList=()=>{
     useEffect(()=>{
         dispatch(GetAllVehicles(page,6));
     },[page]);
+    console.log("list",list);
+    
 
     return(
       <div className="vehicle-list">
         {list.length != 0 ?
-        list.map((vehicle) => (
+        list && list?.vehicles.map((item :any) => (
           <VehicleItem 
-            key={vehicle.id} 
-            id={vehicle.id.toString()} 
-            brand={vehicle.brand} 
-            vehicleType={vehicle.vehicleType}
-            fuelType={vehicle.fuelType} 
-            model={vehicle.model} 
-            year={vehicle.year} 
-            imageUrl={vehicle.imgUrl} 
+            key={item.id} 
+            id={item.id.toString()} 
+            brand={item.brand} 
+            vehicleType={item.vehicleType}
+            fuelType={item.fuelType} 
+            model={item.model} 
+            year={item.year} 
+            imageUrl={item.imgUrl} 
           />
         )) : 
         <div className='preloader-container'>

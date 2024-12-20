@@ -28,11 +28,23 @@ namespace Presentation.Controllers
             return Ok("Vehicle created succesfully...");
         }
         [HttpGet("GetAllVehicles")]
-        public async Task<IActionResult> GetAllVehicles(int page,int size,string ?brand=null,VehicleType?vehicleType=null,FuelType?fuelType=null)
+        public async Task<IActionResult> GetAllVehicles(
+            int page,
+            int size,
+            string? brand = null,
+            VehicleType? vehicleType = null,
+            FuelType? fuelType = null)
         {
-            var vehicles= await _vehicleService.GetVehicleAsync(page,size,brand,vehicleType,fuelType);
-            return Ok(vehicles);
+            var (vehicles, totalCount) = await _vehicleService.GetVehicleAsync(
+                page, size, brand, vehicleType, fuelType);
+
+            return Ok(new
+            {
+                Vehicles = vehicles,
+                TotalCount = totalCount
+            });
         }
+
 
         [HttpDelete("RemoveVehicle")]
         [Authorize(Roles = "Admin")]

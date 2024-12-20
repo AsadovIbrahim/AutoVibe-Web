@@ -34,31 +34,30 @@ namespace Car.Persistance.Services
             await _writeVehicleRepository.AddAsync(vehicle);
         }
 
-        public async Task<ICollection<GetVehicleDTO>> GetVehicleAsync(int page,int size,string? brand=null,VehicleType?vehicleType=null,FuelType?fuelType=null)
+        public async Task<(ICollection<GetVehicleDTO> Vehicles, int TotalCount)> GetVehicleAsync(
+            int page,
+            int size,
+            string? brand = null,
+            VehicleType? vehicleType = null,
+            FuelType? fuelType = null)
         {
-            var vehicles = await _readVehicleRepository.GetAllVehiclesAsync(page,size);
+            var (vehicles, totalCount) = await _readVehicleRepository.GetAllVehiclesAsync(
+                page, size, brand, vehicleType, fuelType);
 
-            if (!string.IsNullOrEmpty(brand))
-                vehicles=vehicles.Where(v=>v.Brand==brand).ToList();
-
-            if (vehicleType.HasValue)
-                vehicles=vehicles.Where(v=>v.VehicleType== vehicleType.Value).ToList();
-
-            if (fuelType.HasValue)
-                vehicles=vehicles.Where(v=>v.FuelType== fuelType.Value).ToList();
-
-            var vehicleDto = vehicles.Select(p=>new GetVehicleDTO
+            var vehicleDtos = vehicles.Select(v => new GetVehicleDTO
             {
-                Id=p.Id,
-                Brand = p.Brand,
-                Model = p.Model,
-                Year = p.Year,
-                FuelType = p.FuelType.ToString(),
-                VehicleType = p.VehicleType.ToString(),
-                ImgUrl = p.ImgUrl,
+                Id = v.Id,
+                Brand = v.Brand,
+                Model = v.Model,
+                Year = v.Year,
+                FuelType = v.FuelType.ToString(),
+                VehicleType = v.VehicleType.ToString(),
+                ImgUrl = v.ImgUrl,
             }).ToList();
-            return vehicleDto;
+
+            return (vehicleDtos, totalCount);
         }
+
 
         public async Task RemoveVehicleAsync(string vehicleId)
         {

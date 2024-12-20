@@ -1,7 +1,9 @@
 ﻿using Car.Application.Repositories.Car;
 using Car.Domain.Entities.Concretes;
+using Car.Domain.Enums.FuelTypes;
+using Car.Domain.Enums.VehicleType;
 using Car.Persistance.Contexts;
-using Car.Persistance.Repositories.Common;  
+using Car.Persistance.Repositories.Common;
 using Microsoft.EntityFrameworkCore;
 
 namespace Car.Persistance.Repositories
@@ -12,11 +14,33 @@ namespace Car.Persistance.Repositories
         {
         }
 
-        public async Task<ICollection<Vehicle>> GetAllVehiclesAsync(int page, int size)
+        public async Task<(ICollection<Vehicle> Vehicles, int TotalCount)> GetAllVehiclesAsync(
+             int page,
+             int size,
+             string? brand = null,
+             VehicleType? vehicleType = null,
+             FuelType? fuelType = null)
         {
-            return await _table.Skip((page - 1) * size)
+            var query = _table.AsQueryable();
+
+            if (!string.IsNullOrEmpty(brand))
+                query = query.Where(v => v.Brand == brand);
+
+            if (vehicleType.HasValue)
+                query = query.Where(v => v.VehicleType == vehicleType.Value);
+
+            if (fuelType.HasValue)
+                query = query.Where(v => v.FuelType == fuelType.Value);
+
+            var totalCount = await query.CountAsync();
+
+            var vehicles = await query
+                .Skip((page - 1) * size)
                 .Take(size)
                 .ToListAsync();
+
+            return (vehicles, totalCount);
         }
+
     }
 }

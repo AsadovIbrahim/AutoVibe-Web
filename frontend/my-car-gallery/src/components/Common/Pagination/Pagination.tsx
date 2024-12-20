@@ -1,16 +1,12 @@
 import './Pagination.scss'
+import PaginationButton from '../PaginationButton/PaginationButton'
 
 const Pagination=()=>{
     return(
         <>
             <div className='pagination-section'>
-                <div className='prev-btn'>
-                    <img src="/assets/images/icon/vector-left.svg"/>
-                </div>
-                
-                <div className='next-btn'>
-                    <img src="/assets/images/icon/vector-right.svg"/>
-                </div>
+                <PaginationButton content='back-pagination'/>
+                <PaginationButton content='next-pagination'/>            
             </div>
         </>
     )
