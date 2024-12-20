@@ -10,7 +10,7 @@ const VehicleList=()=>{
     const page=useAppSelector((state)=>state.pagination.currentPage);
 
     useEffect(()=>{
-        dispatch(GetAllVehicles(page,6));
+        dispatch(GetAllVehicles(page,3));
     },[page]);
     console.log("list",list);
     

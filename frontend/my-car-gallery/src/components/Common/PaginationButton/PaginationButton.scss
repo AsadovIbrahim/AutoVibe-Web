@@ -1,2 +1,16 @@
 @import '/public/assets/styles/mixins.scss';
 @import '/public/assets/styles/variables.scss';
+
+.pagination-btn{
+    border: 1px solid gray;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 10px 25px 10px 25px;
+    transition: 0.5s;
+}
+
+.pagination-btn:hover{
+    background-color: #ffc107;
+    transition: 0.5s;
+}
