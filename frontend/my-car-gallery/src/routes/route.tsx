@@ -3,6 +3,8 @@ import ErrorElement from "../pages/ErrorElement/ErrorElement";
 import SignIn from "../pages/SignIn/SignIn";
 import SignUp from "../pages/SignUp/SignUp";
 import App from "../pages/App/App";
+import Gallery from "../pages/Gallery/Gallery";
+import About from "../pages/About/About";
 
 export const router=createBrowserRouter([
     {
@@ -13,6 +15,19 @@ export const router=createBrowserRouter([
     {
         path:"/home",
         element:<App/>,
+        errorElement:<ErrorElement/>
+    },
+
+    {
+        path:"/about",
+        element:<About/>,
+        errorElement:<ErrorElement/>
+    },
+
+
+    {
+        path:"/gallery",
+        element:<Gallery/>,
         errorElement:<ErrorElement/>
     },
     {

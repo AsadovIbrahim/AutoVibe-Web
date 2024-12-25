@@ -14,6 +14,8 @@ namespace Car.Persistance.Repositories
         {
         }
 
+      
+
         public async Task<(ICollection<Vehicle> Vehicles, int TotalCount)> GetAllVehiclesAsync(
              int page,
              int size,
@@ -42,5 +44,8 @@ namespace Car.Persistance.Repositories
             return (vehicles, totalCount);
         }
 
+     
+
+        
     }
 }
