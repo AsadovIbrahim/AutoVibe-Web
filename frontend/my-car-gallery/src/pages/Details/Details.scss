@@ -1,0 +1,40 @@
+@import '/public/assets/styles/mixins.scss';
+@import '/public/assets/styles/variables.scss';
+
+
+
+.details-container{
+    @include dflex-align(12px, center,flex);
+
+    .right-section{
+        .brand-model{
+            padding-bottom: 20px;
+            font-weight: 400;
+        }
+        .line{
+            margin:0px 0px 10px 0px
+        }
+
+    }
+    .details-upper{
+        padding: 30px;
+
+        img{
+            border-radius: 12px;
+        }
+    }
+    .details-lower{
+        background-color: #0F141E;
+        line-height: 40px;
+        padding: 40px;
+        width: 100%;
+        margin-right: 30px;
+        border-radius: 20px;
+
+        .details-info{
+            p{
+                font-size: 13px;
+            }
+        }
+    }
+}

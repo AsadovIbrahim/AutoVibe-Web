@@ -4,10 +4,12 @@ import { Header } from '../../components/Layouts/Header/Header';
 import VehicleList from '../../components/Common/VehicleList/VehicleList';
 import './Gallery.scss';
 import Pagination from '../../components/Common/Pagination/Pagination';
+import ScrollTopButton from '../../components/Common/ScrollTopButton/ScrollTopButton';
 
 const Gallery = () => {
     return (
         <div>
+            <ScrollTopButton/>
             <Header />
             <Banner
                 title={

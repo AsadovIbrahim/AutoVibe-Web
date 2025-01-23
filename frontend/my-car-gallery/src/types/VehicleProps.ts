@@ -1,3 +1,5 @@
+import { VehicleItemProps } from "./VehicleItemProps";
+
 export type VehicleProps={
     id: string;
     brand: string;
@@ -6,4 +8,5 @@ export type VehicleProps={
     vehicleType:string;
     year: number;
     imgUrl?: string;
+    vehicles:VehicleItemProps[]
 }

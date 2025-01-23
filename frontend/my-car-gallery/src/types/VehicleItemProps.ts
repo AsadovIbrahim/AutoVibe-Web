@@ -5,5 +5,5 @@ export type VehicleItemProps = {
     fuelType:string;
     vehicleType:string;
     year: number;
-    imageUrl?: string;
+    imgUrl?: string;
   }

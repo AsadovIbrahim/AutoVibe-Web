@@ -2,7 +2,7 @@ import './VehicleList.scss';
 import { useEffect } from 'react';
 import VehicleItem from "../VehicleItem/VehicleItem";
 import { useAppDispatch, useAppSelector } from '../../../hooks/useAppDispatch';
-import { GetAllVehicles } from '../../../services/api/ApiService';
+import { GetAllVehicles } from '../../../services/api/VehiclesApiService';
 
 const VehicleList = ({ size }: { size: number }) => {
     const dispatch = useAppDispatch();
@@ -25,7 +25,7 @@ const VehicleList = ({ size }: { size: number }) => {
                         fuelType={item.fuelType}
                         model={item.model}
                         year={item.year}
-                        imageUrl={item.imgUrl}
+                        imgUrl={item.imgUrl}
                     />
                 ))
             ) : (

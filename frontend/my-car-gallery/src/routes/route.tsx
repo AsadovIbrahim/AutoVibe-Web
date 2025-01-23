@@ -5,6 +5,7 @@ import SignUp from "../pages/SignUp/SignUp";
 import App from "../pages/App/App";
 import Gallery from "../pages/Gallery/Gallery";
 import About from "../pages/About/About";
+import Details from "../pages/Details/Details"
 
 export const router=createBrowserRouter([
     {
@@ -30,6 +31,19 @@ export const router=createBrowserRouter([
         element:<Gallery/>,
         errorElement:<ErrorElement/>
     },
+
+    {
+        path:"gallery/details/:id",
+        element:<Details/>,
+        errorElement:<ErrorElement/>,
+    },
+    
+    {
+        path:"/details/:id",
+        element:<Details/>,
+        errorElement:<ErrorElement/>,
+    },
+
     {
         path:"/",
         element:<SignIn/>,
