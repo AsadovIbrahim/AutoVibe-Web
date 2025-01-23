@@ -103,6 +103,45 @@ namespace Car.Persistance.Services
             }
         }
 
-      
+        public async Task<ICollection<GetVehicleDTO>> GetAllVehiclesListAsync()
+        {
+            var vehicles= await _readVehicleRepository.GetAllAsync();
+            var result = vehicles.Select(p => new GetVehicleDTO
+            {
+                Id = p.Id,
+                Brand = p.Brand,
+                Model = p.Model,
+                VehicleType=p.VehicleType.ToString(),
+                FuelType=p.FuelType.ToString(),
+                Year = p.Year,
+                ImgUrl = p.ImgUrl,
+            }).ToList();
+
+            return result;
+        }
+
+        public async Task<ICollection<GetVehicleDTO>> GetRelatedVehiclesAsync(string vehicleId)
+        {
+            var selectedVehicle=await _readVehicleRepository.GetByIdAsync(vehicleId);
+            if (selectedVehicle == null)
+                throw new Exception("Vehicle not found!");
+
+            var relatedVehicles = await _readVehicleRepository.GetRelatedVehiclesAsync(
+                selectedVehicle.VehicleType, 
+                vehicleId
+            );
+            
+            return relatedVehicles.Select(v => new GetVehicleDTO
+            {
+                Id = v.Id,
+                Brand = v.Brand,
+                Model = v.Model,
+                VehicleType = v.VehicleType.ToString(),
+                FuelType = v.FuelType.ToString(),
+                Year = v.Year,
+                ImgUrl = v.ImgUrl,
+            }).ToList();
+
+        }
     }
 }

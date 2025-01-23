@@ -356,6 +356,18 @@
         }
       }
     },
+    "/api/Vehicle/GetAllVehiclesList": {
+      "get": {
+        "tags": [
+          "Vehicle"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/Vehicle/RemoveVehicle": {
       "delete": {
         "tags": [
@@ -443,6 +455,28 @@
       "post": {
         "tags": [
           "Vehicle"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Vehicle/{vehicleId}/related": {
+      "get": {
+        "tags": [
+          "Vehicle"
+        ],
+        "parameters": [
+          {
+            "name": "vehicleId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "responses": {
           "200": {

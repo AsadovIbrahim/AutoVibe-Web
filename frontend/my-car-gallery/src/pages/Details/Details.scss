@@ -4,7 +4,8 @@
 
 
 .details-container{
-    @include dflex-align(12px, center,flex);
+    @include dflex-justify(12px, space-evenly,flex);
+    align-items: center;
 
     .right-section{
         .brand-model{
@@ -17,7 +18,7 @@
 
     }
     .details-upper{
-        padding: 30px;
+        padding-top: 30px;
 
         img{
             border-radius: 12px;

@@ -148,6 +148,22 @@
   },
   {
     "ContainingType": "Presentation.Controllers.VehicleController",
+    "Method": "GetRelatedVehicles",
+    "RelativePath": "api/Vehicle/{vehicleId}/related",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "vehicleId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.VehicleController",
     "Method": "ClearAllVehicles",
     "RelativePath": "api/Vehicle/ClearAllVehicles",
     "HttpMethod": "POST",
@@ -206,6 +222,16 @@
         "IsRequired": false
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.VehicleController",
+    "Method": "GetAllVehiclesList",
+    "RelativePath": "api/Vehicle/GetAllVehiclesList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

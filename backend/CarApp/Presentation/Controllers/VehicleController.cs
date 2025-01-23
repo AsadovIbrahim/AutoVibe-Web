@@ -44,8 +44,13 @@ namespace Presentation.Controllers
                 TotalCount = totalCount
             });
         }
-       
 
+        [HttpGet("GetAllVehiclesList")]
+        public async Task<IActionResult> GetAllVehiclesList()
+        {
+            var vehicles=await _vehicleService.GetAllVehiclesListAsync();
+            return Ok(vehicles);
+        }
 
         [HttpDelete("RemoveVehicle")]
         [Authorize(Roles = "Admin")]
@@ -86,6 +91,14 @@ namespace Presentation.Controllers
             if (string.IsNullOrEmpty(userId)) return Unauthorized("User Not Authenticated!");
             else await _vehicleService.ClearAllVehicles();
             return Ok("All Cars successfully Deleted Succesfully...");
+        }
+
+        [HttpGet("{vehicleId}/related")]
+        public async Task<IActionResult>GetRelatedVehicles(string vehicleId)
+        {
+            if (vehicleId == null) return BadRequest("Vehicle Not Found!");
+            var result=await _vehicleService.GetRelatedVehiclesAsync(vehicleId);
+            return Ok(result);
         }
     }
 }

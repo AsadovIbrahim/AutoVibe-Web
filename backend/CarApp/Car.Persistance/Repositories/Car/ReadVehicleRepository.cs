@@ -44,8 +44,21 @@ namespace Car.Persistance.Repositories
             return (vehicles, totalCount);
         }
 
-     
+        public async Task<ICollection<Vehicle>> GetAllVehiclesListAsync()
+        {
+            return await _table.ToListAsync();
+        }
 
-        
+        public async Task<ICollection<Vehicle>> GetRelatedVehiclesAsync(VehicleType? vehicleType, string excludedVehicleId)
+        {
+            var query = _table.AsQueryable();
+            query=query.Where(v=>v.Id!=excludedVehicleId);
+            if (vehicleType.HasValue)
+            {
+                query = query.Where(v => v.VehicleType == vehicleType.Value);
+            }
+            var vehicles = await _table.Take(4).ToListAsync();
+            return vehicles;
+        }
     }
 }
