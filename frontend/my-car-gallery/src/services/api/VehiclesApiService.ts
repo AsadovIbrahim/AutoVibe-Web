@@ -23,6 +23,18 @@ export const GetAllVehicles = (page: number, size: number) => async (dispatch: A
     }
 };
 
+export const GetRelatedVehicles=(vehicleId:string)=>async(dispatch:AppDispatch)=>{
+    try{
+        dispatch(fetchActions.Request());
+        const url=`${base_url}Vehicle/${vehicleId}/related`;
+        const response=await axios.get(url);
+        return response.data;
+    }
+    catch(error:any){
+        const errorMessage = error.response?.data?.message || 'Failed to fetch vehicles!';
+        dispatch(fetchActions.Error(errorMessage));    
+    }
+}
 export const GetVehicleById=(id:string)=>async()=>{
     try{
         const url=`${base_url}Vehicle/GetVehicleById?vehicleId=${id}`;

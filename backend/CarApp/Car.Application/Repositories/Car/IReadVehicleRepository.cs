@@ -10,7 +10,7 @@ namespace Car.Application.Repositories.Car
     {
 
         Task<ICollection<Vehicle>> GetAllVehiclesListAsync();
-        Task<ICollection<Vehicle>> GetRelatedVehiclesAsync(VehicleType? vehicleType,string excludedVehicleId);
+        Task<ICollection<Vehicle>> GetRelatedVehiclesAsync(VehicleType? vehicleType,FuelType? fuelType,string excludedVehicleId);
         Task<(ICollection<Vehicle> Vehicles, int TotalCount)> GetAllVehiclesAsync(
                      int page,
                      int size,

@@ -128,6 +128,7 @@ namespace Car.Persistance.Services
 
             var relatedVehicles = await _readVehicleRepository.GetRelatedVehiclesAsync(
                 selectedVehicle.VehicleType, 
+                selectedVehicle.FuelType,
                 vehicleId
             );
             

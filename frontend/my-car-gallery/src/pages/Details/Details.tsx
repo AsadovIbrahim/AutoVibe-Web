@@ -2,15 +2,18 @@ import './Details.scss';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from '../../hooks/useAppDispatch';
-import { GetVehicleById } from '../../services/api/VehiclesApiService';
+import { GetVehicleById,GetRelatedVehicles } from '../../services/api/VehiclesApiService';
 import { VehicleItemProps } from '../../types/VehicleItemProps';
 import Navbar from '../../components/Layouts/Navbar/Navbar';
 import Footer from '../../components/Layouts/Footer/Footer';
+import VehicleItem from '../../components/Common/VehicleItem/VehicleItem';
+import Pagination from '../../components/Common/Pagination/Pagination';
 
 const Details = () => {
     const { id } = useParams<{ id: string }>();
     const error = useAppSelector((state) => state.fetch.error);
     const [vehicle, setVehicle] = useState<VehicleItemProps | undefined>(undefined);
+    const[relatedVehicles,setRelatedVehicles]=useState<VehicleItemProps[]>([]);
     const dispatch=useAppDispatch()
 
     useEffect(() => {
@@ -20,8 +23,11 @@ const Details = () => {
     
     
     const handleFetch=async(id:string)=>{
-        const response=dispatch(GetVehicleById(id));
+        const response=await dispatch(GetVehicleById(id));
         setVehicle(await response)
+
+        const relatedResonse=await dispatch(GetRelatedVehicles(id));
+        setRelatedVehicles(relatedResonse);
       
     }
 
@@ -66,6 +72,31 @@ const Details = () => {
                     </div>
                 </div>
             </div>
+
+            
+
+            {relatedVehicles.length > 0 && (
+                <div className="related-vehicles">
+                    <h2>Related Vehicles</h2>
+                    <div className="vehicle-list">
+                        {relatedVehicles.map((vehicle) => (
+                            <VehicleItem
+                                key={vehicle.id}
+                                id={vehicle.id.toString()}
+                                brand={vehicle.brand}
+                                model={vehicle.model}
+                                fuelType={vehicle.fuelType}
+                                vehicleType={vehicle.vehicleType}
+                                year={vehicle.year}
+                                imgUrl={vehicle.imgUrl}
+                            />
+                        ))}
+                    </div>
+                    <Pagination/>
+                </div>
+            )}
+
+
             <Footer/>
         </>
     );
