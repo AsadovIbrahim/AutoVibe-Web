@@ -195,7 +195,7 @@ namespace Car.Persistance.Services
         {
 
             var confirmEmailToken = _tokenService.CreateConfirmEmailToken();
-            var actionUrl = $@"https://localhost:7109/api/Auth/ConfirmEmail?token={Uri.EscapeDataString(confirmEmailToken.Token)}";
+            var actionUrl = $@"https://localhost:8000/api/Auth/ConfirmEmail?token={Uri.EscapeDataString(confirmEmailToken.Token)}";
             var result = await _emailService.SendMailAsync(registerDTO.Email, "Confirm Your Email", $"Reset your password by <a href='{actionUrl}'>clicking here</a>.", true);
 
             var userConfirmEmailToken = new UserToken()
@@ -243,7 +243,7 @@ namespace Car.Persistance.Services
                 token.IsDeleted = true;
 
             var forgotPasswordToken = await _tokenService.CreateRepasswordToken(user);
-            var actionUrl = $@"http://localhost:5173/resetpassword?token={forgotPasswordToken.Token}";
+            var actionUrl = $@"http://localhost:8000/resetpassword?token={forgotPasswordToken.Token}";
             var result = await _emailService.SendMailAsync(forgotPasswordDTO.Email, "Reset Your Password", $"Reset your password by <a href='{actionUrl}'>clicking here</a>.", true);
 
             var userForgotPasswordToken = new UserToken()

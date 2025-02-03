@@ -33,7 +33,7 @@ namespace Car.Infrastructure.Services
             SmtpClient smtp = new SmtpClient();
             smtp.Host = "smtp.gmail.com";
             smtp.Port = 587;
-            smtp.Credentials = new NetworkCredential("ibrahimasadov31@gmail.com", "cbuw npxl ilit xwpu");
+            smtp.Credentials = new NetworkCredential("ibrahimasadov31@gmail.com", "treq fglc dwmt nduj");
             smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
             smtp.EnableSsl = true;
 

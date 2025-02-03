@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const VehicleItem = ({ id, brand, model, fuelType, vehicleType, year, imgUrl }: VehicleItemProps) => {
     return (
-        <Link to={`details/${id}`} className="vehicle-container">
+        <Link to={`../details/${id}`} className="vehicle-container">
             <div className='upper-part'>
                 {imgUrl ? (
                     <img src={imgUrl} alt={`${brand} ${model}`} />
