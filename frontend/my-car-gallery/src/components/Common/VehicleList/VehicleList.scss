@@ -1,7 +1,6 @@
-@import '/public/assets/styles/mixins.scss';
-@import '/public/assets/styles/variables.scss';
-
 .vehicle-list{
-    @include dflex-param(12px,center,flex);
+    display: flex;
+    justify-content: center;
+    gap: 12px;
     flex-wrap: wrap;
 }

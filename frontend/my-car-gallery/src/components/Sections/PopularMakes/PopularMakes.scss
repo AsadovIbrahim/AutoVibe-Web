@@ -1,12 +1,13 @@
-@import '/public/assets/styles/mixins.scss';
-@import '/public/assets/styles/variables.scss';
-
 .header-section{
-    @include dflex-justify(12px,space-between,flex);
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
     margin: 60px;
 
     .right-section{
-        @include dflex-param(10px,flex);
+        display: flex;
+        align-items: center;
+        gap: 10px;
         img{
             width: 10px;
             cursor: pointer;

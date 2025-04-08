@@ -1,8 +1,7 @@
-@import '/public/assets/styles/mixins.scss';
-@import '/public/assets/styles/variables.scss';
 
 .pagination-section{
-    @include dflex-param(20px,flex);
+    display: flex;
+    gap: 20px;
     margin-left: 50px;
     margin-bottom: 100px;
 

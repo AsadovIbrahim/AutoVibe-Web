@@ -1,10 +1,7 @@
-@import '/public/assets/styles/mixins.scss';
-@import '/public/assets/styles/variables.scss';
-
-
-
 .details-container{
-    @include dflex-justify(12px, space-evenly,flex);
+    display: flex;
+    gap: 12px;
+    justify-content: space-evenly;
     align-items: center;
 
     .right-section{
