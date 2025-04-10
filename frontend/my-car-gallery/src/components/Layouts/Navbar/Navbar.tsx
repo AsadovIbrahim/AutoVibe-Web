@@ -1,6 +1,6 @@
-import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 import "./Navbar.scss";
 import { Link } from "react-router-dom";
+import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 
 const Navbar = () => {
   return (
@@ -31,7 +31,7 @@ const Navbar = () => {
     <div className="right-section">
         <LanguageSwitcher/>
       <div className="auth">
-        <Link to="/signin" className="sign-in-btn">Sign In</Link>
+        <Link to="/login" className="sign-in-btn">Sign In</Link>
       </div>
 
     </div>
