@@ -1,0 +1,18 @@
+.oauth-btn{
+    background-color: #ffffff;
+    width: 88%;
+    margin:30px 0px 0px 30px;
+    padding: 10px;
+    gap: 5px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    button{
+        outline: none;
+        border: none;
+        background-color: transparent;
+        font-weight: 600;
+    }
+}
