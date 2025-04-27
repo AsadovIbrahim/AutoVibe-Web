@@ -501,7 +501,7 @@
       "LoginDTO": {
         "type": "object",
         "properties": {
-          "username": {
+          "usernameOrEmail": {
             "type": "string",
             "nullable": true
           },
@@ -534,10 +534,12 @@
           },
           "password": {
             "type": "string",
+            "format": "password",
             "nullable": true
           },
           "confirmPassword": {
             "type": "string",
+            "format": "password",
             "nullable": true
           },
           "profilePhoto": {

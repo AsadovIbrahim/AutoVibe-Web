@@ -54,8 +54,10 @@ namespace Car.Persistance.Services
             var error = "";
             if (Response == null) Response = response;
 
-            var user = await _userManager.FindByNameAsync(loginDTO.Username);
-
+            var user = string.IsNullOrEmpty(loginDTO.UsernameOrEmail) ? null :
+                           loginDTO.UsernameOrEmail.Contains("@") ?
+                           await _userManager.FindByEmailAsync(loginDTO.UsernameOrEmail) :
+                           await _userManager.FindByNameAsync(loginDTO.UsernameOrEmail);
             if (user is null)
                 error = "Username is wrong";
             else if (!user.EmailConfirmed)
@@ -196,7 +198,7 @@ namespace Car.Persistance.Services
 
             var confirmEmailToken = _tokenService.CreateConfirmEmailToken();
             var actionUrl = $@"https://localhost:8000/api/Auth/ConfirmEmail?token={Uri.EscapeDataString(confirmEmailToken.Token)}";
-            var result = await _emailService.SendMailAsync(registerDTO.Email, "Confirm Your Email", $"Reset your password by <a href='{actionUrl}'>clicking here</a>.", true);
+            var result = await _emailService.SendMailAsync(registerDTO.Email, "Confirm Your Email", $"Confirm your email by <a href='{actionUrl}'>clicking here</a>.", true);
 
             var userConfirmEmailToken = new UserToken()
             {
@@ -236,7 +238,7 @@ namespace Car.Persistance.Services
 
             var user = await _readUserRepository.GetUserByEmail(forgotPasswordDTO.Email);
             if (user is null)
-                return 404; // BadRequest("User not found");
+                return 404; 
 
             var tokenstodelete = user.UserTokens!.Where(p => p.Name == "RepasswordToken").Where(p => p.IsDeleted == false);
             foreach (var token in tokenstodelete)

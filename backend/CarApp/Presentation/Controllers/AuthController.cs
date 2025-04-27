@@ -51,7 +51,7 @@ namespace Presentation.Controllers
             var result = await _authService.ConfirmEmail(token);
             if (result == 404) return BadRequest("User not found.");
             else if (result == 405) return BadRequest("ConfirmEmailToken expired");
-            else return Ok("Email confirmed");
+            else return Ok(new { message = "Email confirmed" });
         }
 
         [HttpPost("ForgotPassword")]
