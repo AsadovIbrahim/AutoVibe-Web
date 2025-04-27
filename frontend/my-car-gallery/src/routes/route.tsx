@@ -6,6 +6,7 @@ import App from "../pages/App/App";
 import Gallery from "../pages/Gallery/Gallery";
 import About from "../pages/About/About";
 import Details from "../pages/Details/Details"
+import ConfirmEmailInfo from "../pages/ConfirmEmailInfo/ConfirmEmailInfo";
 
 export const router=createBrowserRouter([
     {
@@ -45,13 +46,18 @@ export const router=createBrowserRouter([
     },
 
     {
-        path:"/login",
+        path:"/Login",
         element:<SignIn/>,
         errorElement:<ErrorElement/>
     },
     {
         path:"/register",
         element:<SignUp/>,
+        errorElement:<ErrorElement/>
+    },
+    {
+        path:"confirm-email-info",
+        element:<ConfirmEmailInfo/>,
         errorElement:<ErrorElement/>
     }
 ]);

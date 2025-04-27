@@ -1,15 +1,18 @@
-import "./Input.scss"
+import { InputProps } from '../../../types/InputProps';
+import './Input.scss';
 
-import { InputProps } from "../../../types/InputProps"
-
-const Input=({placeholder}:InputProps)=>{
-    return(
-        <>
-            <div className="input-border">
-                <input type="text" placeholder={placeholder} />
-            </div>
-        </>
-    )
-}
+const Input = ({ placeholder, value, onChange, name }: InputProps) => {
+  return (
+    <div className="input-border">
+      <input
+        type="text"
+        placeholder={placeholder}
+        value={value}
+        onChange={onChange}
+        name={name} 
+      />
+    </div>
+  );
+};
 
 export default Input;

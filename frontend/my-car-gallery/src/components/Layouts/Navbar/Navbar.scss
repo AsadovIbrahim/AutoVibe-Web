@@ -5,8 +5,9 @@
     padding: 1rem 2rem;
     background-color: #111;
     color: #ffffff;
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100%;
     z-index: 100;
   
     .logo {
@@ -59,7 +60,6 @@
       display: flex;
       align-items: center;
       gap: 20px;
-
         .auth {
             .sign-in-btn {
               text-decoration: none;
@@ -76,7 +76,56 @@
                 background-color: #e0a800;
               }
             }
+      }
+      .profile-section {
+        position: relative; /* <-- Əsas budur */
+        display: flex;
+        align-items: center;
+      
+        img {
+          width: 30px;
+          height: 30px;
+          object-fit: cover;
+          background-color: transparent;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+      
+        .profile-dropdown {
+          position: absolute; /* <-- Profil şəklinin altına çıxacaq */
+          top: 40px; /* Profil fotosunun aşağısından başlasın */
+          right: 0;
+          background-color: #222;
+          border: 1px solid #333;
+          border-radius: 8px;
+          padding: 10px;
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          min-width: 150px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+          z-index: 10;
+      
+          a, button {
+            font-size: 14px;
+            text-decoration: none;
+            color: #ffffff;
+            background: transparent;
+            border: none;
+            text-align: left;
+            font-weight: 500;
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+      
+            &:hover {
+              background-color: #333;
+            }
           }
+        }
+      }
+      
     }
     
   }

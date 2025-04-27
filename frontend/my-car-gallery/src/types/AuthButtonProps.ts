@@ -1,3 +1,4 @@
 export type AuthButtonProps={
-    content:string
+    content:string;
+    disabled:boolean;
 }
