@@ -1,6 +1,6 @@
-﻿using Car.Application.Services;
-using Car.Domain.DTO_s;
+﻿using Car.Domain.DTO_s;
 using Microsoft.AspNetCore.Mvc;
+using Car.Application.Services;
 
 namespace Presentation.Controllers
 {
@@ -64,12 +64,15 @@ namespace Presentation.Controllers
         }
 
         [HttpPost("ResetPassword")]
-        public async Task<IActionResult> ResetPassword(string token, [FromBody] ResetPasswordDTO forgotPasswordDTO)
+        public async Task<IActionResult> ResetPassword([FromQuery] string token, [FromBody] ResetPasswordDTO resetPasswordDTO)
         {
-
-            var result = await _authService.ResetPassword(token, forgotPasswordDTO);
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState); 
+            }
+            var result = await _authService.ResetPassword(token, resetPasswordDTO);
             if (result == 404) return BadRequest("User not found.");
-            else return Ok("Password Updated");
+            return Ok("Password Updated");
         }
 
 

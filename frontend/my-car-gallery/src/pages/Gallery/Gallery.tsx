@@ -1,16 +1,16 @@
 import Banner from '../../components/Common/Banner/Banner';
 import Footer from '../../components/Layouts/Footer/Footer';
-import { Header } from '../../components/Layouts/Header/Header';
 import VehicleList from '../../components/Common/VehicleList/VehicleList';
 import './Gallery.scss';
 import Pagination from '../../components/Common/Pagination/Pagination';
 import ScrollTopButton from '../../components/Common/ScrollTopButton/ScrollTopButton';
+import Navbar from '../../components/Layouts/Navbar/Navbar';
 
 const Gallery = () => {
     return (
         <div>
             <ScrollTopButton/>
-            <Header />
+            <Navbar />
             <Banner
                 title={
                     <p className='our-gallery-text'>

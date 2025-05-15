@@ -1,4 +1,4 @@
-import { PasswordProps } from '../../../types/InputProps';
+import { PasswordProps } from '../../../types/PasswordProps';
 import './PasswordInput.scss';
 
 const PasswordInput = ({ placeholder, value, onChange, name }: PasswordProps) => {

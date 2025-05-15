@@ -26,7 +26,7 @@ namespace Presentation
             {
                 options.AddPolicy("CorsPolicy", builder =>
                 {
-                    builder.WithOrigins("http://localhost:5300")
+                    builder.WithOrigins("http://localhost:5820")
                            .AllowAnyMethod()
                            .AllowAnyHeader()
                            .AllowCredentials();

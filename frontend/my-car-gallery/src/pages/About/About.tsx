@@ -2,7 +2,7 @@ import Banner from '../../components/Common/Banner/Banner';
 import ScrollTopButton from '../../components/Common/ScrollTopButton/ScrollTopButton';
 import VehicleTypeCards from '../../components/Common/VehicleTypeCards/VehicleTypeCards';
 import Footer from '../../components/Layouts/Footer/Footer';
-import { Header } from '../../components/Layouts/Header/Header';
+import Navbar from '../../components/Layouts/Navbar/Navbar';
 import './About.scss'
 
 
@@ -10,7 +10,7 @@ const About=()=>{
 
     return(
         <div>
-            <Header/>
+            <Navbar/>
             <Banner
                 title={
                     <>

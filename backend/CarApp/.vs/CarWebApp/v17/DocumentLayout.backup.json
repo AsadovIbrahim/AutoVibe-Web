@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\ASUS\\source\\repos\\AutoVibe-Web\\backend\\CarApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7EA3B704-9D30-4AC9-BE72-4E51A32167C8}|Presentation\\Presentation.csproj|c:\\users\\asus\\source\\repos\\autovibe-web\\backend\\carapp\\presentation\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EA3B704-9D30-4AC9-BE72-4E51A32167C8}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EEE34902-B764-4041-A555-F9F1A2E0057A}|Car.Persistance\\Car.Persistance.csproj|c:\\users\\asus\\source\\repos\\autovibe-web\\backend\\carapp\\car.persistance\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EEE34902-B764-4041-A555-F9F1A2E0057A}|Car.Persistance\\Car.Persistance.csproj|solutionrelative:car.persistance\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EEE34902-B764-4041-A555-F9F1A2E0057A}|Car.Persistance\\Car.Persistance.csproj|c:\\users\\asus\\source\\repos\\autovibe-web\\backend\\carapp\\car.persistance\\registerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EEE34902-B764-4041-A555-F9F1A2E0057A}|Car.Persistance\\Car.Persistance.csproj|solutionrelative:car.persistance\\registerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7EA3B704-9D30-4AC9-BE72-4E51A32167C8}|Presentation\\Presentation.csproj|c:\\users\\asus\\source\\repos\\autovibe-web\\backend\\carapp\\presentation\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EA3B704-9D30-4AC9-BE72-4E51A32167C8}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91E7E96F-DB19-4F89-A17D-93CDEB68E7BB}|Car.Domain\\Car.Domain.csproj|c:\\users\\asus\\source\\repos\\autovibe-web\\backend\\carapp\\car.domain\\dto\u0027s\\resetpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91E7E96F-DB19-4F89-A17D-93CDEB68E7BB}|Car.Domain\\Car.Domain.csproj|solutionrelative:car.domain\\dto\u0027s\\resetpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EA3B704-9D30-4AC9-BE72-4E51A32167C8}|Presentation\\Presentation.csproj|c:\\users\\asus\\source\\repos\\autovibe-web\\backend\\carapp\\presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EA3B704-9D30-4AC9-BE72-4E51A32167C8}|Presentation\\Presentation.csproj|solutionrelative:presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{91E7E96F-DB19-4F89-A17D-93CDEB68E7BB}|Car.Domain\\Car.Domain.csproj|c:\\users\\asus\\source\\repos\\autovibe-web\\backend\\carapp\\car.domain\\dto\u0027s\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{91E7E96F-DB19-4F89-A17D-93CDEB68E7BB}|Car.Domain\\Car.Domain.csproj|solutionrelative:car.domain\\dto\u0027s\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA3B704-9D30-4AC9-BE72-4E51A32167C8}|Presentation\\Presentation.csproj|c:\\users\\asus\\source\\repos\\autovibe-web\\backend\\carapp\\presentation\\controllers\\vehiclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EA3B704-9D30-4AC9-BE72-4E51A32167C8}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\vehiclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EEE34902-B764-4041-A555-F9F1A2E0057A}|Car.Persistance\\Car.Persistance.csproj|c:\\users\\asus\\source\\repos\\autovibe-web\\backend\\carapp\\car.persistance\\registerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEE34902-B764-4041-A555-F9F1A2E0057A}|Car.Persistance\\Car.Persistance.csproj|solutionrelative:car.persistance\\registerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{91E7E96F-DB19-4F89-A17D-93CDEB68E7BB}|Car.Domain\\Car.Domain.csproj|c:\\users\\asus\\source\\repos\\autovibe-web\\backend\\carapp\\car.domain\\dto\u0027s\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -61,38 +65,75 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "VehicleController.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\AutoVibe-Web\\backend\\CarApp\\Presentation\\Controllers\\VehicleController.cs",
-              "RelativeDocumentMoniker": "Presentation\\Controllers\\VehicleController.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\AutoVibe-Web\\backend\\CarApp\\Presentation\\Controllers\\VehicleController.cs",
-              "RelativeToolTip": "Presentation\\Controllers\\VehicleController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\AutoVibe-Web\\backend\\CarApp\\Presentation\\Program.cs",
+              "RelativeDocumentMoniker": "Presentation\\Program.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\AutoVibe-Web\\backend\\CarApp\\Presentation\\Program.cs",
+              "RelativeToolTip": "Presentation\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T17:38:29.33Z",
-              "IsPinned": true,
+              "WhenOpened": "2025-05-15T12:24:29.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\AutoVibe-Web\\backend\\CarApp\\Presentation\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\AutoVibe-Web\\backend\\CarApp\\Presentation\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Presentation\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T12:21:33.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\AutoVibe-Web\\backend\\CarApp\\Car.Persistance\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Car.Persistance\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\AutoVibe-Web\\backend\\CarApp\\Car.Persistance\\Services\\AuthService.cs",
+              "RelativeToolTip": "Car.Persistance\\Services\\AuthService.cs",
+              "ViewState": "AgIAAPYAAAAAAAAAAAAAABUBAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T12:42:03.731Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "ResetPasswordDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\AutoVibe-Web\\backend\\CarApp\\Car.Domain\\DTO\u0027s\\ResetPasswordDTO.cs",
+              "RelativeDocumentMoniker": "Car.Domain\\DTO\u0027s\\ResetPasswordDTO.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\AutoVibe-Web\\backend\\CarApp\\Car.Domain\\DTO\u0027s\\ResetPasswordDTO.cs",
+              "RelativeToolTip": "Car.Domain\\DTO\u0027s\\ResetPasswordDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T10:57:00.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "RegisterServices.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\AutoVibe-Web\\backend\\CarApp\\Car.Persistance\\RegisterServices.cs",
               "RelativeDocumentMoniker": "Car.Persistance\\RegisterServices.cs",
               "ToolTip": "C:\\Users\\ASUS\\source\\repos\\AutoVibe-Web\\backend\\CarApp\\Car.Persistance\\RegisterServices.cs",
               "RelativeToolTip": "Car.Persistance\\RegisterServices.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAzwA0AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T12:31:58.268Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-27T12:31:58.268Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "RegisterDTO.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\AutoVibe-Web\\backend\\CarApp\\Car.Domain\\DTO\u0027s\\RegisterDTO.cs",
               "RelativeDocumentMoniker": "Car.Domain\\DTO\u0027s\\RegisterDTO.cs",
@@ -100,12 +141,11 @@
               "RelativeToolTip": "Car.Domain\\DTO\u0027s\\RegisterDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T09:59:50.698Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-27T09:59:50.698Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "LoginDTO.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\AutoVibe-Web\\backend\\CarApp\\Car.Domain\\DTO\u0027s\\LoginDTO.cs",
               "RelativeDocumentMoniker": "Car.Domain\\DTO\u0027s\\LoginDTO.cs",
@@ -113,38 +153,11 @@
               "RelativeToolTip": "Car.Domain\\DTO\u0027s\\LoginDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T20:42:58.889Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-25T20:42:58.889Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\AutoVibe-Web\\backend\\CarApp\\Car.Persistance\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "Car.Persistance\\Services\\AuthService.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\AutoVibe-Web\\backend\\CarApp\\Car.Persistance\\Services\\AuthService.cs",
-              "RelativeToolTip": "Car.Persistance\\Services\\AuthService.cs",
-              "ViewState": "AgIAANIAAAAAAAAAAAAqwOoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T20:40:52.256Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\AutoVibe-Web\\backend\\CarApp\\Presentation\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Presentation\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\AutoVibe-Web\\backend\\CarApp\\Presentation\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Presentation\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAmwC8AAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T20:11:03.018Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "VehicleWishListService.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\AutoVibe-Web\\backend\\CarApp\\Car.Persistance\\Services\\VehicleWishListService.cs",
               "RelativeDocumentMoniker": "Car.Persistance\\Services\\VehicleWishListService.cs",
@@ -156,7 +169,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "ReadVehicleWishListRepository.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\AutoVibe-Web\\backend\\CarApp\\Car.Persistance\\Repositories\\CarWishList\\ReadVehicleWishListRepository.cs",
               "RelativeDocumentMoniker": "Car.Persistance\\Repositories\\CarWishList\\ReadVehicleWishListRepository.cs",
@@ -168,7 +181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "WriteVehicleWishListRepository.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\AutoVibe-Web\\backend\\CarApp\\Car.Persistance\\Repositories\\CarWishList\\WriteVehicleWishListRepository.cs",
               "RelativeDocumentMoniker": "Car.Persistance\\Repositories\\CarWishList\\WriteVehicleWishListRepository.cs",
@@ -180,7 +193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "UserWishListController.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\AutoVibe-Web\\backend\\CarApp\\Presentation\\Controllers\\UserWishListController.cs",
               "RelativeDocumentMoniker": "Presentation\\Controllers\\UserWishListController.cs",
@@ -192,16 +205,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "dbo.AspNetUsers [Data]",
+              "DocumentIndex": 7,
+              "Title": "dbo.AspNetUsers.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_RH76RDQ_SQLEXPRESS/AutoVibe/True/SqlTable/dbo.AspNetUsers.sql",
-              "ToolTip": "dbo.AspNetUsers [Data]",
+              "ToolTip": "ViewDataWindow_MSSQL__/DESKTOP_RH76RDQ_SQLEXPRESS/AutoVibe/True/SqlTable/dbo.AspNetUsers.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
               "WhenOpened": "2025-04-06T20:05:15.896Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "VehicleService.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\AutoVibe-Web\\backend\\CarApp\\Car.Persistance\\Services\\VehicleService.cs",
               "RelativeDocumentMoniker": "Car.Persistance\\Services\\VehicleService.cs",
@@ -213,7 +226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "IReadVehicleRepository.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\AutoVibe-Web\\backend\\CarApp\\Car.Application\\Repositories\\Car\\IReadVehicleRepository.cs",
               "RelativeDocumentMoniker": "Car.Application\\Repositories\\Car\\IReadVehicleRepository.cs",

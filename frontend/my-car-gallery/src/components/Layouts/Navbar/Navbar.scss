@@ -5,7 +5,7 @@
     padding: 1rem 2rem;
     background-color: #111;
     color: #ffffff;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     z-index: 100;
@@ -40,6 +40,9 @@
       display: flex;
       list-style: none;
   
+      .active-link {
+        color: #ffc107;
+      } 
       li {
         margin: 0 2rem;
   
@@ -78,7 +81,7 @@
             }
       }
       .profile-section {
-        position: relative; /* <-- Əsas budur */
+        position: relative;
         display: flex;
         align-items: center;
       
@@ -92,8 +95,8 @@
         }
       
         .profile-dropdown {
-          position: absolute; /* <-- Profil şəklinin altına çıxacaq */
-          top: 40px; /* Profil fotosunun aşağısından başlasın */
+          position: absolute;
+          top: 40px; 
           right: 0;
           background-color: #222;
           border: 1px solid #333;

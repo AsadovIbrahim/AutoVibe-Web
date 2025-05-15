@@ -37,11 +37,28 @@ export const ConfirmEmail = async (token: string) => {
 };
 
 export const ForgotPassword=async(values:any)=>{
-    return await axios.post(base_url+"Auth/ForgotPassword",values);
+
+    try{
+        const response=await axios.post(`${base_url}Auth/ForgotPassword`,values);
+        console.log("Forgot password response",response.data);
+        return response.data;
+    }
+    catch(error){
+        console.log("Forgot Password Api error",error);
+        throw error;
+    }
 }
 
-export const ResetPassword=async(token:string,values:any)=>{
-    return await axios.post(base_url+`Auth/ResetPassword?token=${token}`,values);
+export const ResetPassword=async(token: string, values: { password: string; confirmPassword: string })=>{
+    try{
+        const response=await axios.post(base_url+`Auth/ResetPassword?token=${encodeURIComponent(token)}`,values);
+        console.log("Reset Password response",response.data);
+        return response.data;
+    }
+    catch(error){
+        console.log("Reset Password Api error",error);
+        throw error;
+    }
 }
 
 export const RefreshLogin=async()=>{

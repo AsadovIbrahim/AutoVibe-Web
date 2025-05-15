@@ -245,7 +245,7 @@ namespace Car.Persistance.Services
                 token.IsDeleted = true;
 
             var forgotPasswordToken = await _tokenService.CreateRepasswordToken(user);
-            var actionUrl = $@"http://localhost:8000/resetpassword?token={forgotPasswordToken.Token}";
+            var actionUrl = $@"http://localhost:5820/resetpassword?token={Uri.EscapeDataString(forgotPasswordToken.Token)}";
             var result = await _emailService.SendMailAsync(forgotPasswordDTO.Email, "Reset Your Password", $"Reset your password by <a href='{actionUrl}'>clicking here</a>.", true);
 
             var userForgotPasswordToken = new UserToken()

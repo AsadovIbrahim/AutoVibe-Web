@@ -87,7 +87,7 @@
         "IsRequired": false
       },
       {
-        "Name": "forgotPasswordDTO",
+        "Name": "resetPasswordDTO",
         "Type": "Car.Domain.DTO_s.ResetPasswordDTO",
         "IsRequired": true
       }

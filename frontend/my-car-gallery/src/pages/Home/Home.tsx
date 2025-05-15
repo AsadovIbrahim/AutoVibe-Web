@@ -3,10 +3,12 @@ import Banner from '../../components/Common/Banner/Banner';
 import PopularMakes from '../../components/Sections/PopularMakes/PopularMakes';
 import Pagination from '../../components/Common/Pagination/Pagination';
 import ScrollTopButton from '../../components/Common/ScrollTopButton/ScrollTopButton';
+import Navbar from '../../components/Layouts/Navbar/Navbar';
 
 const Home = () => {
     return (
         <div className="home-container">
+            <Navbar/>
             <ScrollTopButton />
             <Banner
                 title={

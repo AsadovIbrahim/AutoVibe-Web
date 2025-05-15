@@ -66,6 +66,8 @@ const LoginForm = () => {
                   name={usernameOrEmail}
                 />
                 <PasswordInput
+                  placeholder='Password'
+                  name='password'
                   value={password}
                   onChange={(e:any) => setPassword(e.target.value)}
                 />
@@ -77,7 +79,7 @@ const LoginForm = () => {
                   <p>Remember-me</p>
                 </div>
                 <div className="forgot-password">
-                  <a href="">Forgot Password?</a>
+                  <a href="/forgot-password">Forgot Password?</a>
                 </div>
               </div>
 
