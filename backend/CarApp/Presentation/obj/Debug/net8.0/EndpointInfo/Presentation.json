@@ -476,6 +476,22 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "size",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
           }
         ],
         "responses": {

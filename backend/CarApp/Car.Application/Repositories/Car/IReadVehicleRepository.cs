@@ -6,13 +6,13 @@ using Car.Domain.Enums.VehicleType;
 
 namespace Car.Application.Repositories.Car
 {
-    public interface IReadVehicleRepository:IReadGenericRepository<Vehicle>
+    public interface IReadVehicleRepository : IReadGenericRepository<Vehicle>
     {
 
         Task<ICollection<Vehicle>> GetAllVehiclesListAsync();
-        Task<ICollection<Vehicle>> GetRelatedVehiclesAsync(VehicleType? vehicleType,FuelType? fuelType,string excludedVehicleId);
+        Task<(ICollection<Vehicle>Vehicles,int TotalCount)>GetRelatedVehiclesAsync(VehicleType? vehicleType, FuelType? fuelType, string excludedVehicleId, int page, int size);
         Task<(ICollection<Vehicle> Vehicles, int TotalCount)> GetAllVehiclesAsync(
-                     int page,
+                     int page,  
                      int size,
                      string? brand = null,
                      VehicleType? vehicleType = null,

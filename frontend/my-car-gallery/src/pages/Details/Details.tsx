@@ -10,26 +10,35 @@ import VehicleItem from '../../components/Common/VehicleItem/VehicleItem';
 import Pagination from '../../components/Common/Pagination/Pagination';
 
 const Details = () => {
-    const { id } = useParams<{ id: string }>();
+    const { id } = useParams<{ id: string }>(); 
     const error = useAppSelector((state) => state.fetch.error);
     const [vehicle, setVehicle] = useState<VehicleItemProps | undefined>(undefined);
     const[relatedVehicles,setRelatedVehicles]=useState<VehicleItemProps[]>([]);
-    const dispatch=useAppDispatch()
+    const currentPage = useAppSelector((state) => state.pagination.currentPage);
+    const dispatch = useAppDispatch();
+
 
     useEffect(() => {
-        handleFetch(id as string)
-    }, [id]);
-    
-    
-    
-    const handleFetch=async(id:string)=>{
-        const response=await dispatch(GetVehicleById(id));
-        setVehicle(await response)
+        if (id) {
+            handleFetch(id, currentPage);
+        }
+    }, [id, currentPage]);
 
-        const relatedResonse=await dispatch(GetRelatedVehicles(id));
-        setRelatedVehicles(relatedResonse);
-      
+    
+    
+    const size=3;
+    const handleFetch = async (id: string, page: number) => {
+    const response = await dispatch(GetVehicleById(id));
+    console.log(response)
+    if (response) {
+        setVehicle(response); 
     }
+
+    const relatedResponse = await dispatch(GetRelatedVehicles(id, page, size));
+    if (relatedResponse) {
+        setRelatedVehicles(relatedResponse);
+    }
+    };
 
     if (error) {
         return <div className="error">{error}</div>;

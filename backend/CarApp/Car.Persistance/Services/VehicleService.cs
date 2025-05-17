@@ -120,19 +120,21 @@ namespace Car.Persistance.Services
             return result;
         }
 
-        public async Task<ICollection<GetVehicleDTO>> GetRelatedVehiclesAsync(string vehicleId)
+        public async Task<(ICollection<GetVehicleDTO>Vehicle,int TotalCount)> GetRelatedVehiclesAsync(string vehicleId,int page ,int size)
         {
             var selectedVehicle=await _readVehicleRepository.GetByIdAsync(vehicleId);
             if (selectedVehicle == null)
                 throw new Exception("Vehicle not found!");
 
-            var relatedVehicles = await _readVehicleRepository.GetRelatedVehiclesAsync(
+            var (vehicles,totalCount) = await _readVehicleRepository.GetRelatedVehiclesAsync(
                 selectedVehicle.VehicleType, 
                 selectedVehicle.FuelType,
-                vehicleId
+                vehicleId,
+                page,
+                size
             );
             
-            return relatedVehicles.Select(v => new GetVehicleDTO
+            var relatedVehicles=vehicles.Select(v => new GetVehicleDTO
             {
                 Id = v.Id,
                 Brand = v.Brand,
@@ -142,7 +144,7 @@ namespace Car.Persistance.Services
                 Year = v.Year,
                 ImgUrl = v.ImgUrl,
             }).ToList();
-
+            return (relatedVehicles,totalCount);
         }
     }
 }

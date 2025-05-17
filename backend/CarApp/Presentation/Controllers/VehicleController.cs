@@ -94,11 +94,15 @@ namespace Presentation.Controllers
         }
 
         [HttpGet("{vehicleId}/related")]
-        public async Task<IActionResult>GetRelatedVehicles(string vehicleId)
+        public async Task<IActionResult>GetRelatedVehicles(string vehicleId,int page,int size)
         {
             if (vehicleId == null) return BadRequest("Vehicle Not Found!");
-            var result=await _vehicleService.GetRelatedVehiclesAsync(vehicleId);
-            return Ok(result);
+            var (vehicles,totalCount)=await _vehicleService.GetRelatedVehiclesAsync(vehicleId,page,size);
+            return Ok(new
+            {
+                Vehicles=vehicles,
+                TotalCount=totalCount
+            });
         }
     }
 }

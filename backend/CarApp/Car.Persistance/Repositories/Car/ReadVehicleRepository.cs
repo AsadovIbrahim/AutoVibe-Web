@@ -49,16 +49,36 @@ namespace Car.Persistance.Repositories
             return await _table.ToListAsync();
         }
 
-        public async Task<ICollection<Vehicle>> GetRelatedVehiclesAsync(VehicleType? vehicleType,FuelType?fuelType, string excludedVehicleId)
+        public async Task<(ICollection<Vehicle> Vehicles, int TotalCount)> GetRelatedVehiclesAsync(
+              VehicleType? vehicleType,
+              FuelType? fuelType,
+              string excludedVehicleId,
+              int page,
+              int size)
         {
             var query = _table.AsQueryable();
-            query=query.Where(v=>v.Id!=excludedVehicleId);
-            if (vehicleType.HasValue && fuelType.HasValue)
+
+            query = query.Where(v => v.Id != excludedVehicleId);
+
+            if (vehicleType.HasValue)
             {
-                query = query.Where(v => v.VehicleType == vehicleType.Value && v.FuelType==fuelType.Value);
+                query = query.Where(v => v.VehicleType == vehicleType.Value);
             }
-            var vehicles = await query.ToListAsync();
-            return vehicles;
+            if (fuelType.HasValue)
+            {
+                query = query.Where(v => v.FuelType == fuelType.Value);
+            }
+
+
+            var totalCount = await query.CountAsync();
+
+            var vehicles = await query
+                .Skip((page - 1) * size)
+                .Take(size)
+                .ToListAsync();
+
+            return (vehicles, totalCount);
         }
+
     }
 }
